@@ -12,7 +12,6 @@
 // device
 #define ScreenSize ([UIScreen mainScreen].bounds.size)
 #define is_4inch (ScreenSize.height > 480)
-#define is_3.5inch (ScreenSize.height == 480)
 #define is_iOS7_and_upper ()
 
 // color
@@ -26,7 +25,7 @@
 #define TableViewSeparatorColor RGB_HEX(0xc8c7cc)
 
 #define App [UIApplication sharedApplication]
-#define AppWindow App.delegate.window
+#define AppWindow [UIApplication sharedApplication].delegate.window
 
 #define StoryBoard(_name_) [UIStoryboard storyboardWithName:_name_ bundle:nil]
 

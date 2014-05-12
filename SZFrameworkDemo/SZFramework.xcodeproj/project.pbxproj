@@ -32,7 +32,6 @@
 		60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A08191F7D5F008A06CE /* UIImage+Helper.m */; };
 		60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A0B191F7D6E008A06CE /* UIView+Helper.m */; };
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
-		60815A15191F7FF2008A06CE /* SZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A14191F7FF2008A06CE /* SZPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +87,6 @@
 		60815A0B191F7D6E008A06CE /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Helper.m"; path = "../SZFramework/UIView+Helper.m"; sourceTree = "<group>"; };
 		60815A0F191F7E8D008A06CE /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HUD.h"; path = "../SZFramework/UIViewController+HUD.h"; sourceTree = "<group>"; };
 		60815A10191F7E8D008A06CE /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HUD.m"; path = "../SZFramework/UIViewController+HUD.m"; sourceTree = "<group>"; };
-		60815A13191F7FF2008A06CE /* SZPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPickerView.h; path = ../SZFramework/SZPickerView.h; sourceTree = "<group>"; };
-		60815A14191F7FF2008A06CE /* SZPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPickerView.m; path = ../SZFramework/SZPickerView.m; sourceTree = "<group>"; };
 		AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C4330BD9B7404D9C8733633C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -277,8 +274,6 @@
 		60815A12191F7FB2008A06CE /* 007_V_custom */ = {
 			isa = PBXGroup;
 			children = (
-				60815A13191F7FF2008A06CE /* SZPickerView.h */,
-				60815A14191F7FF2008A06CE /* SZPickerView.m */,
 			);
 			name = 007_V_custom;
 			sourceTree = "<group>";
@@ -429,7 +424,6 @@
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
-				60815A15191F7FF2008A06CE /* SZPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +552,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -573,6 +568,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
