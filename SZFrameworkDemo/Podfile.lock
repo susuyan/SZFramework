@@ -39,7 +39,6 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.2.3)
   - FMDB (~> 2.1)
-  - MBProgressHUD (~> 0.8)
   - MWPhotoBrowser (~> 1.4.0)
   - SDWebImage (~> 3.5.4)
   - SVPullToRefresh (~> 0.4.1)

@@ -32,6 +32,7 @@
 		60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A08191F7D5F008A06CE /* UIImage+Helper.m */; };
 		60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A0B191F7D6E008A06CE /* UIView+Helper.m */; };
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
+		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		60815A0B191F7D6E008A06CE /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Helper.m"; path = "../SZFramework/UIView+Helper.m"; sourceTree = "<group>"; };
 		60815A0F191F7E8D008A06CE /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HUD.h"; path = "../SZFramework/UIViewController+HUD.h"; sourceTree = "<group>"; };
 		60815A10191F7E8D008A06CE /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HUD.m"; path = "../SZFramework/UIViewController+HUD.m"; sourceTree = "<group>"; };
+		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
 		AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C4330BD9B7404D9C8733633C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		608159A2191DCC36008A06CE = {
 			isa = PBXGroup;
 			children = (
+				60815A1619211321008A06CE /* SZFramework.podspec */,
 				608159E7191F5D3A008A06CE /* SZFramework.h */,
 				608159E6191F5A8F008A06CE /* SZLog.h */,
 				608159F5191F7295008A06CE /* define.h */,
@@ -359,6 +362,7 @@
 			files = (
 				608159C7191DCC36008A06CE /* Images.xcassets in Resources */,
 				608159B9191DCC36008A06CE /* InfoPlist.strings in Resources */,
+				60815A1719211321008A06CE /* SZFramework.podspec in Resources */,
 				608159C2191DCC36008A06CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
