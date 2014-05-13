@@ -39,7 +39,8 @@
 #import "UIViewController+HUD.h"
 
 // 007
-#import "SZWindow.h"
+#import "SZPopView.h"
+#import "SZPopWindow.h"
 
 // 008
 #import "SZOpenURLManager.h"

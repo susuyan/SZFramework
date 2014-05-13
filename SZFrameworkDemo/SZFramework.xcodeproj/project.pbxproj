@@ -34,7 +34,9 @@
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
-		60C5D8F41921FD4100B8CDB5 /* SZWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8F31921FD4100B8CDB5 /* SZWindow.m */; };
+		60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAD9D2192256D1008046F9 /* Reveal.framework */; };
+		60FAD9D61922572D008046F9 /* SZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D51922572D008046F9 /* SZPopView.m */; };
+		60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D81922578D008046F9 /* SZPopWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +95,11 @@
 		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
 		60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZOpenURLManager.h; path = ../SZFramework/SZOpenURLManager.h; sourceTree = "<group>"; };
 		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
-		60C5D8F21921FD4100B8CDB5 /* SZWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZWindow.h; path = ../SZFramework/SZWindow.h; sourceTree = "<group>"; };
-		60C5D8F31921FD4100B8CDB5 /* SZWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZWindow.m; path = ../SZFramework/SZWindow.m; sourceTree = "<group>"; };
+		60FAD9D2192256D1008046F9 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
+		60FAD9D41922572D008046F9 /* SZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopView.h; path = ../SZFramework/SZPopView.h; sourceTree = "<group>"; };
+		60FAD9D51922572D008046F9 /* SZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopView.m; path = ../SZFramework/SZPopView.m; sourceTree = "<group>"; };
+		60FAD9D71922578D008046F9 /* SZPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopWindow.h; path = ../SZFramework/SZPopWindow.h; sourceTree = "<group>"; };
+		60FAD9D81922578D008046F9 /* SZPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopWindow.m; path = ../SZFramework/SZPopWindow.m; sourceTree = "<group>"; };
 		AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C4330BD9B7404D9C8733633C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +111,7 @@
 			files = (
 				608159B1191DCC36008A06CE /* CoreGraphics.framework in Frameworks */,
 				608159B3191DCC36008A06CE /* UIKit.framework in Frameworks */,
+				60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */,
 				608159AF191DCC36008A06CE /* Foundation.framework in Frameworks */,
 				50C520C4A2434B44BB264408 /* libPods.a in Frameworks */,
 			);
@@ -127,6 +133,7 @@
 		608159A2191DCC36008A06CE = {
 			isa = PBXGroup;
 			children = (
+				60FAD9D2192256D1008046F9 /* Reveal.framework */,
 				60815A1619211321008A06CE /* SZFramework.podspec */,
 				608159E7191F5D3A008A06CE /* SZFramework.h */,
 				608159E6191F5A8F008A06CE /* SZLog.h */,
@@ -284,8 +291,10 @@
 		60815A12191F7FB2008A06CE /* 007_V */ = {
 			isa = PBXGroup;
 			children = (
-				60C5D8F21921FD4100B8CDB5 /* SZWindow.h */,
-				60C5D8F31921FD4100B8CDB5 /* SZWindow.m */,
+				60FAD9D41922572D008046F9 /* SZPopView.h */,
+				60FAD9D51922572D008046F9 /* SZPopView.m */,
+				60FAD9D71922578D008046F9 /* SZPopWindow.h */,
+				60FAD9D81922578D008046F9 /* SZPopWindow.m */,
 			);
 			name = 007_V;
 			sourceTree = "<group>";
@@ -440,14 +449,15 @@
 				608159EA191F5F59008A06CE /* NSDictionary+JSON.m in Sources */,
 				608159BB191DCC36008A06CE /* main.m in Sources */,
 				608159E5191F59C5008A06CE /* NSArray+JSON.m in Sources */,
+				60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
 				60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */,
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
+				60FAD9D61922572D008046F9 /* SZPopView.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
-				60C5D8F41921FD4100B8CDB5 /* SZWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,17 +583,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/Sid_Zheng/szframework/SZFramework/jpush,
-					/Users/Sid_Zheng/szframework/SZFramework/umeng,
-					/Users/Sid_Zheng/szframework/SZFramework/wechat,
-					/Users/Sid_Zheng/szframework/SZFramework/weibo,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -596,17 +604,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/Sid_Zheng/szframework/SZFramework/jpush,
-					/Users/Sid_Zheng/szframework/SZFramework/umeng,
-					/Users/Sid_Zheng/szframework/SZFramework/wechat,
-					/Users/Sid_Zheng/szframework/SZFramework/weibo,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

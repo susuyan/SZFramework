@@ -14,10 +14,15 @@
 
 @implementation SZViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +31,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)show:(id)sender {
+    [[SZPopWindow sharedWindow] show];
+}
+- (IBAction)showView:(id)sender {
+    [[SZPopView sharedView] show];
+}
 @end
