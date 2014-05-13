@@ -1,4 +1,5 @@
 Pod::Spec.new do |s|
+
     s.name = 'SZFramework'
     s.version = '1.0'
     s.license = 'MIT'
@@ -16,5 +17,9 @@ Pod::Spec.new do |s|
     s.source_files = 'SZFramework/*.{h,m}'
     
     s.dependency 'MBProgressHUD', '~> 0.8'
+    s.dependency 'AFNetworking', '~> 2.2.3'
+    s.dependency 'FMDB', '~> 2.1'
+    s.dependency 'SDWebImage', '~> 3.5.4'
+    s.dependency 'MWPhotoBrowser', '~> 1.4.0'
 
 end

@@ -9,23 +9,23 @@
 #ifndef SZFramework_SZLog_h
 #define SZFramework_SZLog_h
 
-#define SZLog(fmt, ...)\
-do {\
-NSString *___FILENAME___ = [[[NSString stringWithCString:__FILE__\
-encoding:NSUTF8StringEncoding]\
-componentsSeparatedByString:@"/"] lastObject];\
-NSLog((@\
-"\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n"\
-"文件:    %@\n" \
-"方法:    %s\n" \
-"行数:    %d\n" \
-"信息:    " fmt \
-"\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"), \
-___FILENAME___, \
-__FUNCTION__, \
-__LINE__, \
-##__VA_ARGS__);\
-} while(0);\
+#define SZLog(fmt, ...) \
+do { \
+NSString *___FILENAME___ = [[[NSString stringWithCString:__FILE__ \
+                                                encoding:NSUTF8StringEncoding] \
+                                                componentsSeparatedByString:@"/"] lastObject]; \
+                                                NSLog((@\
+                                                "\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\n"\
+                                                "文件:    %@\n" \
+                                                "方法:    %s\n" \
+                                                "行数:    %d\n" \
+                                                "信息:    " fmt \
+                                                "\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"), \
+                                                ___FILENAME___, \
+                                                __FUNCTION__, \
+                                                __LINE__, \
+                                                ##__VA_ARGS__);\
+                                                } while(0);\
 
 #define dVarName(name) (#name)
 

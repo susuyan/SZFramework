@@ -33,6 +33,8 @@
 		60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A0B191F7D6E008A06CE /* UIView+Helper.m */; };
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
+		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
+		60C5D8F41921FD4100B8CDB5 /* SZWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8F31921FD4100B8CDB5 /* SZWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,10 @@
 		60815A0F191F7E8D008A06CE /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HUD.h"; path = "../SZFramework/UIViewController+HUD.h"; sourceTree = "<group>"; };
 		60815A10191F7E8D008A06CE /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HUD.m"; path = "../SZFramework/UIViewController+HUD.m"; sourceTree = "<group>"; };
 		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
+		60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZOpenURLManager.h; path = ../SZFramework/SZOpenURLManager.h; sourceTree = "<group>"; };
+		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
+		60C5D8F21921FD4100B8CDB5 /* SZWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZWindow.h; path = ../SZFramework/SZWindow.h; sourceTree = "<group>"; };
+		60C5D8F31921FD4100B8CDB5 /* SZWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZWindow.m; path = ../SZFramework/SZWindow.m; sourceTree = "<group>"; };
 		AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C4330BD9B7404D9C8733633C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,7 +138,8 @@
 				60815A00191F752F008A06CE /* 004_M_category */,
 				60815A0D191F7E4F008A06CE /* 005_V_category */,
 				60815A0E191F7E60008A06CE /* 006_C_category */,
-				60815A12191F7FB2008A06CE /* 007_V_custom */,
+				60815A12191F7FB2008A06CE /* 007_V */,
+				60C5D8E51921EE2800B8CDB5 /* 008_C */,
 				608159B4191DCC36008A06CE /* SZFramework */,
 				608159D3191DCC36008A06CE /* SZFrameworkTests */,
 				608159AD191DCC36008A06CE /* Frameworks */,
@@ -274,11 +281,22 @@
 			name = 006_C_category;
 			sourceTree = "<group>";
 		};
-		60815A12191F7FB2008A06CE /* 007_V_custom */ = {
+		60815A12191F7FB2008A06CE /* 007_V */ = {
 			isa = PBXGroup;
 			children = (
+				60C5D8F21921FD4100B8CDB5 /* SZWindow.h */,
+				60C5D8F31921FD4100B8CDB5 /* SZWindow.m */,
 			);
-			name = 007_V_custom;
+			name = 007_V;
+			sourceTree = "<group>";
+		};
+		60C5D8E51921EE2800B8CDB5 /* 008_C */ = {
+			isa = PBXGroup;
+			children = (
+				60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */,
+				60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */,
+			);
+			name = 008_C;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,11 +441,13 @@
 				608159BB191DCC36008A06CE /* main.m in Sources */,
 				608159E5191F59C5008A06CE /* NSArray+JSON.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
+				60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */,
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
+				60C5D8F41921FD4100B8CDB5 /* SZWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +577,13 @@
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sid_Zheng/szframework/SZFramework/jpush,
+					/Users/Sid_Zheng/szframework/SZFramework/umeng,
+					/Users/Sid_Zheng/szframework/SZFramework/wechat,
+					/Users/Sid_Zheng/szframework/SZFramework/weibo,
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -573,6 +600,13 @@
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sid_Zheng/szframework/SZFramework/jpush,
+					/Users/Sid_Zheng/szframework/SZFramework/umeng,
+					/Users/Sid_Zheng/szframework/SZFramework/wechat,
+					/Users/Sid_Zheng/szframework/SZFramework/weibo,
+				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
