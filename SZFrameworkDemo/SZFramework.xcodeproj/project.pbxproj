@@ -37,6 +37,7 @@
 		60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAD9D2192256D1008046F9 /* Reveal.framework */; };
 		60FAD9D61922572D008046F9 /* SZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D51922572D008046F9 /* SZPopView.m */; };
 		60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D81922578D008046F9 /* SZPopWindow.m */; };
+		60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9DB19225EFD008046F9 /* SZNotificationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		60FAD9D51922572D008046F9 /* SZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopView.m; path = ../SZFramework/SZPopView.m; sourceTree = "<group>"; };
 		60FAD9D71922578D008046F9 /* SZPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopWindow.h; path = ../SZFramework/SZPopWindow.h; sourceTree = "<group>"; };
 		60FAD9D81922578D008046F9 /* SZPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopWindow.m; path = ../SZFramework/SZPopWindow.m; sourceTree = "<group>"; };
+		60FAD9DA19225EFD008046F9 /* SZNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNotificationView.h; path = ../SZFramework/SZNotificationView.h; sourceTree = "<group>"; };
+		60FAD9DB19225EFD008046F9 /* SZNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNotificationView.m; path = ../SZFramework/SZNotificationView.m; sourceTree = "<group>"; };
 		AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C4330BD9B7404D9C8733633C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -295,6 +298,8 @@
 				60FAD9D51922572D008046F9 /* SZPopView.m */,
 				60FAD9D71922578D008046F9 /* SZPopWindow.h */,
 				60FAD9D81922578D008046F9 /* SZPopWindow.m */,
+				60FAD9DA19225EFD008046F9 /* SZNotificationView.h */,
+				60FAD9DB19225EFD008046F9 /* SZNotificationView.m */,
 			);
 			name = 007_V;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 			files = (
 				608159F0191F60DA008A06CE /* NSString+MD5.m in Sources */,
 				608159C5191DCC36008A06CE /* SZViewController.m in Sources */,
+				60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */,
 				60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */,
 				60815A03191F7577008A06CE /* UIImage+MD5.m in Sources */,
 				608159EA191F5F59008A06CE /* NSDictionary+JSON.m in Sources */,
