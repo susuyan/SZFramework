@@ -35,6 +35,10 @@
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
 		60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */; };
+		60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3B3192321A300CFD09D /* SZCommon.m */; };
+		60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3BB1923348100CFD09D /* NSDate+Helper.m */; };
+		60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */; };
+		60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */; };
 		60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAD9D2192256D1008046F9 /* Reveal.framework */; };
 		60FAD9D61922572D008046F9 /* SZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D51922572D008046F9 /* SZPopView.m */; };
 		60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D81922578D008046F9 /* SZPopWindow.m */; };
@@ -99,6 +103,14 @@
 		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
 		60DCE3AE19231A4900CFD09D /* SZAuthorizeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZAuthorizeC.h; path = ../SZFramework/SZAuthorizeC.h; sourceTree = "<group>"; };
 		60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZAuthorizeC.m; path = ../SZFramework/SZAuthorizeC.m; sourceTree = "<group>"; };
+		60DCE3B2192321A300CFD09D /* SZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCommon.h; path = ../SZFramework/SZCommon.h; sourceTree = "<group>"; };
+		60DCE3B3192321A300CFD09D /* SZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZCommon.m; path = ../SZFramework/SZCommon.m; sourceTree = "<group>"; };
+		60DCE3BA1923348100CFD09D /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Helper.h"; path = "../SZFramework/NSDate+Helper.h"; sourceTree = "<group>"; };
+		60DCE3BB1923348100CFD09D /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Helper.m"; path = "../SZFramework/NSDate+Helper.m"; sourceTree = "<group>"; };
+		60DCE3E91923684400CFD09D /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "../SZFramework/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../SZFramework/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		60DCE3EC1923689D00CFD09D /* UIImageView+BlurImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+BlurImage.h"; path = "../SZFramework/UIImageView+BlurImage.h"; sourceTree = "<group>"; };
+		60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+BlurImage.m"; path = "../SZFramework/UIImageView+BlurImage.m"; sourceTree = "<group>"; };
 		60FAD9D2192256D1008046F9 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 		60FAD9D41922572D008046F9 /* SZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopView.h; path = ../SZFramework/SZPopView.h; sourceTree = "<group>"; };
 		60FAD9D51922572D008046F9 /* SZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopView.m; path = ../SZFramework/SZPopView.m; sourceTree = "<group>"; };
@@ -153,6 +165,7 @@
 				60815A0E191F7E60008A06CE /* 006_C_category */,
 				60815A12191F7FB2008A06CE /* 007_V */,
 				60C5D8E51921EE2800B8CDB5 /* 008_C */,
+				60DCE3B11923218100CFD09D /* 100_common */,
 				608159B4191DCC36008A06CE /* SZFramework */,
 				608159D3191DCC36008A06CE /* SZFrameworkTests */,
 				608159AD191DCC36008A06CE /* Frameworks */,
@@ -272,6 +285,10 @@
 			children = (
 				60815A07191F7D5F008A06CE /* UIImage+Helper.h */,
 				60815A08191F7D5F008A06CE /* UIImage+Helper.m */,
+				60DCE3E91923684400CFD09D /* UIImage+ImageEffects.h */,
+				60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */,
+				60DCE3BA1923348100CFD09D /* NSDate+Helper.h */,
+				60DCE3BB1923348100CFD09D /* NSDate+Helper.m */,
 			);
 			name = 004_M_category;
 			sourceTree = "<group>";
@@ -281,6 +298,8 @@
 			children = (
 				60815A0A191F7D6E008A06CE /* UIView+Helper.h */,
 				60815A0B191F7D6E008A06CE /* UIView+Helper.m */,
+				60DCE3EC1923689D00CFD09D /* UIImageView+BlurImage.h */,
+				60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */,
 			);
 			name = 005_V_category;
 			sourceTree = "<group>";
@@ -316,6 +335,15 @@
 				60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */,
 			);
 			name = 008_C;
+			sourceTree = "<group>";
+		};
+		60DCE3B11923218100CFD09D /* 100_common */ = {
+			isa = PBXGroup;
+			children = (
+				60DCE3B2192321A300CFD09D /* SZCommon.h */,
+				60DCE3B3192321A300CFD09D /* SZCommon.m */,
+			);
+			name = 100_common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +482,7 @@
 			files = (
 				60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */,
 				608159F0191F60DA008A06CE /* NSString+MD5.m in Sources */,
+				60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */,
 				608159C5191DCC36008A06CE /* SZViewController.m in Sources */,
 				60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */,
 				60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */,
@@ -462,12 +491,15 @@
 				608159BB191DCC36008A06CE /* main.m in Sources */,
 				608159E5191F59C5008A06CE /* NSArray+JSON.m in Sources */,
 				60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */,
+				60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
 				60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */,
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
+				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
+				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
 				60FAD9D61922572D008046F9 /* SZPopView.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
 			);
