@@ -24,6 +24,7 @@
 
 #define TableViewSeparatorColor RGB_HEX(0xc8c7cc)
 
+// shortcut
 #define App                     [UIApplication sharedApplication]
 #define AppWindow               [UIApplication sharedApplication].delegate.window
 #define NotificationCenter      [NSNotificationCenter defaultCenter]

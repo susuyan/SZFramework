@@ -11,4 +11,5 @@
 @interface UIImage (Helper)
 - (UIImage*)imageWithImage:(UIImage*)image size:(CGSize)size;
 - (UIImage *)scaleImage:(UIImage *)image proportion:(float)scale;
+- (UIImage *)fixOrientation;
 @end

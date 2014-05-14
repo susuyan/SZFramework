@@ -34,6 +34,7 @@
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
+		60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD900F19242DD600F97C12 /* SZImageHelper.m */; };
 		60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */; };
 		60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3B3192321A300CFD09D /* SZCommon.m */; };
 		60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3BB1923348100CFD09D /* NSDate+Helper.m */; };
@@ -101,6 +102,8 @@
 		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
 		60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZOpenURLManager.h; path = ../SZFramework/SZOpenURLManager.h; sourceTree = "<group>"; };
 		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
+		60CD900E19242DD600F97C12 /* SZImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZImageHelper.h; path = ../SZFramework/SZImageHelper.h; sourceTree = "<group>"; };
+		60CD900F19242DD600F97C12 /* SZImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZImageHelper.m; path = ../SZFramework/SZImageHelper.m; sourceTree = "<group>"; };
 		60DCE3AE19231A4900CFD09D /* SZAuthorizeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZAuthorizeC.h; path = ../SZFramework/SZAuthorizeC.h; sourceTree = "<group>"; };
 		60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZAuthorizeC.m; path = ../SZFramework/SZAuthorizeC.m; sourceTree = "<group>"; };
 		60DCE3B2192321A300CFD09D /* SZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCommon.h; path = ../SZFramework/SZCommon.h; sourceTree = "<group>"; };
@@ -165,6 +168,7 @@
 				60815A0E191F7E60008A06CE /* 006_C_category */,
 				60815A12191F7FB2008A06CE /* 007_V */,
 				60C5D8E51921EE2800B8CDB5 /* 008_C */,
+				60CD900D19242DB700F97C12 /* 009_M */,
 				60DCE3B11923218100CFD09D /* 100_common */,
 				608159B4191DCC36008A06CE /* SZFramework */,
 				608159D3191DCC36008A06CE /* SZFrameworkTests */,
@@ -337,6 +341,15 @@
 			name = 008_C;
 			sourceTree = "<group>";
 		};
+		60CD900D19242DB700F97C12 /* 009_M */ = {
+			isa = PBXGroup;
+			children = (
+				60CD900E19242DD600F97C12 /* SZImageHelper.h */,
+				60CD900F19242DD600F97C12 /* SZImageHelper.m */,
+			);
+			name = 009_M;
+			sourceTree = "<group>";
+		};
 		60DCE3B11923218100CFD09D /* 100_common */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +513,7 @@
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
 				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
+				60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */,
 				60FAD9D61922572D008046F9 /* SZPopView.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
 			);
