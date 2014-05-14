@@ -93,7 +93,7 @@ static NSString * kSZNavigationBarBoundsKeyPath = @"bounds";
 }
 
 + (void)showInViewController:(UIViewController *)viewController
-                       Style:(SZNotificationViewStyle)style
+                       style:(SZNotificationViewStyle)style
                      message:(NSString *)message
 {
     

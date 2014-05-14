@@ -44,5 +44,6 @@
 
 // 008
 #import "SZOpenURLManager.h"
+#import "SZAuthorizeC.h"
 
 #endif
