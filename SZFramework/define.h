@@ -24,15 +24,15 @@
 
 #define TableViewSeparatorColor RGB_HEX(0xc8c7cc)
 
-#define App [UIApplication sharedApplication]
-#define AppWindow [UIApplication sharedApplication].delegate.window
+#define App                     [UIApplication sharedApplication]
+#define AppWindow               [UIApplication sharedApplication].delegate.window
+#define NotificationCenter      [NSNotificationCenter defaultCenter]
+#define UserDefaults            [NSUserDefaults standardUserDefaults]
 
 #define StoryBoard(_name_) [UIStoryboard storyboardWithName:_name_ bundle:nil]
 
 #define weak_self(v) __weak typeof(v) wself = v
 
 #define AFHTTPRequestOperationManeger(__url_string__) [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:__url_string__]]
-
-#define UserDefaults [NSUserDefaults standardUserDefaults]
 
 #endif
