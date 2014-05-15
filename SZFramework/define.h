@@ -21,8 +21,8 @@
                                           green:(((hexColor >> 8) & 0xFF))/255.0f          \
                                            blue:((hexColor & 0xFF))/255.0f                 \
                                           alpha:1]
-
-#define TableViewSeparatorColor RGB_HEX(0xc8c7cc)
+#define group_tableview_bg_color RGB_HEX(0xefeff4)
+#define tableview_separator_color RGB_HEX(0xc8c8c8)
 
 // shortcut
 #define App                     [UIApplication sharedApplication]

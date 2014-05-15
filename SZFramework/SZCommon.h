@@ -21,7 +21,7 @@ typedef NS_ENUM (NSInteger, GlobalHUDStyle){
 
 + (UIImageView *)getImageViewWithFrame:(CGRect)frame backgroundColor:(UIColor *)color;
 
-+ (UIAlertView *) showAlertMessage:(NSString*)content;
++ (UIAlertView *)showAlertMessage:(NSString*)content;
 
 + (void)showNotFoundMessage:(NSString *)message inView:(UIView *)tableView top:(NSInteger)marginTop;
 + (void)removeNotFoundMessageInView:(UIView *)tableView;
