@@ -40,9 +40,11 @@
 // 006
 #import "UIViewController+HUD.h"
 
-// 007
+// 007_V
 #import "SZPopView.h"
 #import "SZPopWindow.h"
+#import "SZNotificationView.h"
+#import "SZPlaceholderTextView.h"
 
 // 008
 #import "SZOpenURLManager.h"

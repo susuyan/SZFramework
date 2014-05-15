@@ -35,6 +35,8 @@
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
 		60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD900F19242DD600F97C12 /* SZImageHelper.m */; };
+		60CD90191924432600F97C12 /* SZPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD90181924432600F97C12 /* SZPlaceholderTextView.m */; };
+		60CD901C1924499A00F97C12 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD901B1924499A00F97C12 /* TestViewController.m */; };
 		60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */; };
 		60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3B3192321A300CFD09D /* SZCommon.m */; };
 		60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3BB1923348100CFD09D /* NSDate+Helper.m */; };
@@ -104,6 +106,10 @@
 		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
 		60CD900E19242DD600F97C12 /* SZImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZImageHelper.h; path = ../SZFramework/SZImageHelper.h; sourceTree = "<group>"; };
 		60CD900F19242DD600F97C12 /* SZImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZImageHelper.m; path = ../SZFramework/SZImageHelper.m; sourceTree = "<group>"; };
+		60CD90171924432600F97C12 /* SZPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPlaceholderTextView.h; path = ../SZFramework/SZPlaceholderTextView.h; sourceTree = "<group>"; };
+		60CD90181924432600F97C12 /* SZPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPlaceholderTextView.m; path = ../SZFramework/SZPlaceholderTextView.m; sourceTree = "<group>"; };
+		60CD901A1924499A00F97C12 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		60CD901B1924499A00F97C12 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		60DCE3AE19231A4900CFD09D /* SZAuthorizeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZAuthorizeC.h; path = ../SZFramework/SZAuthorizeC.h; sourceTree = "<group>"; };
 		60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZAuthorizeC.m; path = ../SZFramework/SZAuthorizeC.m; sourceTree = "<group>"; };
 		60DCE3B2192321A300CFD09D /* SZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCommon.h; path = ../SZFramework/SZCommon.h; sourceTree = "<group>"; };
@@ -209,6 +215,8 @@
 				608159C4191DCC36008A06CE /* SZViewController.m */,
 				608159C6191DCC36008A06CE /* Images.xcassets */,
 				608159B5191DCC36008A06CE /* Supporting Files */,
+				60CD901A1924499A00F97C12 /* TestViewController.h */,
+				60CD901B1924499A00F97C12 /* TestViewController.m */,
 			);
 			path = SZFramework;
 			sourceTree = "<group>";
@@ -326,6 +334,8 @@
 				60FAD9D81922578D008046F9 /* SZPopWindow.m */,
 				60FAD9DA19225EFD008046F9 /* SZNotificationView.h */,
 				60FAD9DB19225EFD008046F9 /* SZNotificationView.m */,
+				60CD90171924432600F97C12 /* SZPlaceholderTextView.h */,
+				60CD90181924432600F97C12 /* SZPlaceholderTextView.m */,
 			);
 			name = 007_V;
 			sourceTree = "<group>";
@@ -495,6 +505,7 @@
 			files = (
 				60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */,
 				608159F0191F60DA008A06CE /* NSString+MD5.m in Sources */,
+				60CD90191924432600F97C12 /* SZPlaceholderTextView.m in Sources */,
 				60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */,
 				608159C5191DCC36008A06CE /* SZViewController.m in Sources */,
 				60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */,
@@ -506,6 +517,7 @@
 				60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */,
 				60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
+				60CD901C1924499A00F97C12 /* TestViewController.m in Sources */,
 				60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */,
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
