@@ -21,5 +21,5 @@ Pod::Spec.new do |s|
     s.dependency 'FMDB', '~> 2.1'
     s.dependency 'SDWebImage', '~> 3.5.4'
     s.dependency 'MWPhotoBrowser', '~> 1.4.0'
-    
+    s.dependency 'JDStatusBarNotification', '~> 1.4.8' 
 end

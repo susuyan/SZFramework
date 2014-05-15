@@ -7,6 +7,7 @@
 //
 
 #import "SZViewController.h"
+#import <JDStatusBarNotification/JDStatusBarNotification.h>
 
 @interface SZViewController ()
 
@@ -33,8 +34,12 @@
 
 - (IBAction)show:(id)sender {
     [[SZPopWindow sharedWindow] show];
+    [JDStatusBarNotification showWithStatus:@"show" styleName:@"show"];
+    [JDStatusBarNotification dismissAfter:1];
 }
 - (IBAction)showView:(id)sender {
     [[SZPopView sharedView] show];
+    [JDStatusBarNotification showWithStatus:@"status" styleName:@"name"];
+    [JDStatusBarNotification dismissAfter:1];
 }
 @end
