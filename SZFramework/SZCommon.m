@@ -7,6 +7,7 @@
 //
 
 #import "SZCommon.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @implementation SZCommon
 + (NSString *)getParamValueFromUrl:(NSString*)url paramName:(NSString *)paramName {
