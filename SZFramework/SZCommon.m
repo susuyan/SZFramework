@@ -98,10 +98,10 @@
     if (style == GlobalHUDStyleProcessing) {
         global.mode = MBProgressHUDModeIndeterminate;
     } else if (style == GlobalHUDStyleFinished) {
-        global.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"EdooonFramework.bundle/hud-succeed"]];
+        global.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-succeed"]];
         global.mode = MBProgressHUDModeCustomView;
     } else {
-        global.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"EdooonFramework.bundle/hud-failed"]];
+        global.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-failed"]];
         global.mode = MBProgressHUDModeCustomView;
     }
     global.tag = kGlobalHUDTag;

@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
     
 
     s.source_files = 'SZFramework/*.{h,m}'
+    s.resource = 'SZFramework/SZFramework.bundle'
     
     s.dependency 'MBProgressHUD', '~> 0.8'
     s.dependency 'AFNetworking', '~> 2.2.3'

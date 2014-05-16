@@ -20,7 +20,7 @@
     [MBProgressHUD hideHUDForView:view animated:YES];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
-    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"hud-succeed"]];
+    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-succeed"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.labelText = text;
     [hud hide:YES afterDelay:duration];
@@ -31,7 +31,7 @@
     [self hideAllHUD];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"hud-succeed"]];
+    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-succeed"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.labelText = text;
     [hud hide:YES afterDelay: duration];
@@ -41,7 +41,7 @@
 - (MBProgressHUD *) showFailureHUDWithText:(NSString *)text {
     [self hideAllHUD];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"hud-failed"]];
+    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-failed"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.labelText = text;
     return hud;
@@ -50,7 +50,7 @@
 - (MBProgressHUD *) showFailureHUDWithText:(NSString *)text duration:(NSTimeInterval)duration {
     [self hideAllHUD];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"hud-failed"]];
+    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-failed"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.labelText = text;
     [hud hide:YES afterDelay:duration];
@@ -60,7 +60,7 @@
 -(MBProgressHUD *) showFailureHUDWithText:(NSString *)text duration:(NSTimeInterval)duration toView:(UIView *)view {
     [self hideAllHUD: view];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"hud-failed"]];
+    hud.customView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"SZFramework.bundle/hud-failed"]];
     hud.mode = MBProgressHUDModeCustomView;
     hud.labelText = text;
     [hud hide:YES afterDelay:duration];
