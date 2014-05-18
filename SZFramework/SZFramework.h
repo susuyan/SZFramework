@@ -50,6 +50,9 @@
 #import "SZOpenURLManager.h"
 #import "SZAuthorizeC.h"
 
+// 009
+#import "SZImageHelper.h"
+
 // 100
 #import "SZCommon.h"
 
