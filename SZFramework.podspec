@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
     s.dependency 'SDWebImage', '~> 3.5.4'
     s.dependency 'MWPhotoBrowser', '~> 1.4.0'
     s.dependency 'JDStatusBarNotification', '~> 1.4.8' 
+    s.dependency 'TOWebViewController', '~> 2.0.6'
 end
