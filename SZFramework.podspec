@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
     s.dependency 'MWPhotoBrowser', '~> 1.4.0'
     s.dependency 'JDStatusBarNotification', '~> 1.4.8' 
     s.dependency 'TOWebViewController', '~> 2.0.6'
+#s.dependency 'Haneke', '~> 0.1'
 end

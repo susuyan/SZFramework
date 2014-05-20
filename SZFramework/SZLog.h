@@ -19,7 +19,7 @@ NSString *___FILENAME___ = [[[NSString stringWithCString:__FILE__ \
                                                 "文件:    %@\n" \
                                                 "方法:    %s\n" \
                                                 "行数:    %d\n" \
-                                                "信息:    \n" fmt \
+                                                "信息:    " fmt \
                                                 "\n┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"), \
                                                 ___FILENAME___, \
                                                 __FUNCTION__, \
