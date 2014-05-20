@@ -41,7 +41,6 @@
 #import "UIViewController+HUD.h"
 
 // 007_V
-#import "SZPopView.h"
 #import "SZPopWindow.h"
 #import "SZNotificationView.h"
 #import "SZPlaceholderTextView.h"

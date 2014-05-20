@@ -44,7 +44,6 @@
 		60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */; };
 		60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */; };
 		60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAD9D2192256D1008046F9 /* Reveal.framework */; };
-		60FAD9D61922572D008046F9 /* SZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D51922572D008046F9 /* SZPopView.m */; };
 		60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D81922578D008046F9 /* SZPopWindow.m */; };
 		60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9DB19225EFD008046F9 /* SZNotificationView.m */; };
 /* End PBXBuildFile section */
@@ -123,8 +122,6 @@
 		60DCE3EC1923689D00CFD09D /* UIImageView+BlurImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+BlurImage.h"; path = "../SZFramework/UIImageView+BlurImage.h"; sourceTree = "<group>"; };
 		60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+BlurImage.m"; path = "../SZFramework/UIImageView+BlurImage.m"; sourceTree = "<group>"; };
 		60FAD9D2192256D1008046F9 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
-		60FAD9D41922572D008046F9 /* SZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopView.h; path = ../SZFramework/SZPopView.h; sourceTree = "<group>"; };
-		60FAD9D51922572D008046F9 /* SZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopView.m; path = ../SZFramework/SZPopView.m; sourceTree = "<group>"; };
 		60FAD9D71922578D008046F9 /* SZPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopWindow.h; path = ../SZFramework/SZPopWindow.h; sourceTree = "<group>"; };
 		60FAD9D81922578D008046F9 /* SZPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopWindow.m; path = ../SZFramework/SZPopWindow.m; sourceTree = "<group>"; };
 		60FAD9DA19225EFD008046F9 /* SZNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNotificationView.h; path = ../SZFramework/SZNotificationView.h; sourceTree = "<group>"; };
@@ -331,8 +328,6 @@
 		60815A12191F7FB2008A06CE /* 007_V */ = {
 			isa = PBXGroup;
 			children = (
-				60FAD9D41922572D008046F9 /* SZPopView.h */,
-				60FAD9D51922572D008046F9 /* SZPopView.m */,
 				60FAD9D71922578D008046F9 /* SZPopWindow.h */,
 				60FAD9D81922578D008046F9 /* SZPopWindow.m */,
 				60FAD9DA19225EFD008046F9 /* SZNotificationView.h */,
@@ -530,7 +525,6 @@
 				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
 				60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */,
-				60FAD9D61922572D008046F9 /* SZPopView.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

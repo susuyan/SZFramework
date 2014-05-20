@@ -38,7 +38,7 @@
     [JDStatusBarNotification dismissAfter:1];
 }
 - (IBAction)showView:(id)sender {
-    [[SZPopView sharedView] show];
+
     [JDStatusBarNotification showWithStatus:@"status" styleName:@"name"];
     [JDStatusBarNotification dismissAfter:1];
 }
