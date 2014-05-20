@@ -45,7 +45,7 @@
 #import "SZNotificationView.h"
 #import "SZPlaceholderTextView.h"
 
-// 008
+// 008_C
 #import "SZOpenURLManager.h"
 #import "SZAuthorizeC.h"
 
