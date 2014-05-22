@@ -34,6 +34,7 @@
 		60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A0B191F7D6E008A06CE /* UIView+Helper.m */; };
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
+		60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA8851192E03AB00D7B928 /* SZBannerView.m */; };
 		60ACCF0A192602D300538046 /* SZFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60ACCF09192602D300538046 /* SZFramework.bundle */; };
 		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
 		60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD900F19242DD600F97C12 /* SZImageHelper.m */; };
@@ -105,6 +106,8 @@
 		60815A0F191F7E8D008A06CE /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HUD.h"; path = "../SZFramework/UIViewController+HUD.h"; sourceTree = "<group>"; };
 		60815A10191F7E8D008A06CE /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HUD.m"; path = "../SZFramework/UIViewController+HUD.m"; sourceTree = "<group>"; };
 		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
+		60AA8850192E03AB00D7B928 /* SZBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZBannerView.h; path = ../SZFramework/SZBannerView.h; sourceTree = "<group>"; };
+		60AA8851192E03AB00D7B928 /* SZBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZBannerView.m; path = ../SZFramework/SZBannerView.m; sourceTree = "<group>"; };
 		60ACCF09192602D300538046 /* SZFramework.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SZFramework.bundle; path = ../SZFramework/SZFramework.bundle; sourceTree = "<group>"; };
 		60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZOpenURLManager.h; path = ../SZFramework/SZOpenURLManager.h; sourceTree = "<group>"; };
 		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				60FAD9DB19225EFD008046F9 /* SZNotificationView.m */,
 				60CD90171924432600F97C12 /* SZPlaceholderTextView.h */,
 				60CD90181924432600F97C12 /* SZPlaceholderTextView.m */,
+				60AA8850192E03AB00D7B928 /* SZBannerView.h */,
+				60AA8851192E03AB00D7B928 /* SZBannerView.m */,
 			);
 			name = 007_V;
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
+				60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
 				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,

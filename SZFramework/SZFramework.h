@@ -44,6 +44,7 @@
 #import "SZPopWindow.h"
 #import "SZNotificationView.h"
 #import "SZPlaceholderTextView.h"
+#import "SZBannerView.h"
 
 // 008_C
 #import "SZOpenURLManager.h"
