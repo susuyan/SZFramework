@@ -82,10 +82,14 @@
         if ([self.imageNameArray[i] hasPrefix:@"http://"]) {
             UIImageView *imgView = [[UIImageView alloc] init];
             [imgView setImageWithURL:[NSURL URLWithString:self.imageNameArray[i]]];
+            imgView.contentMode = UIViewContentModeScaleAspectFill;
+            imgView.clipsToBounds = YES;
             [self.imageViewArray insertObject:imgView atIndex:i];
         }
         else {
             UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:self.imageNameArray[i]]];
+            imgView.contentMode = UIViewContentModeScaleAspectFill;
+            imgView.clipsToBounds = YES;
             [self.imageViewArray insertObject:imgView atIndex:i];
         }
         CGRect frame = self.scrollView.bounds;
