@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50C520C4A2434B44BB264408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4330BD9B7404D9C8733633C /* libPods.a */; };
+		605AC506192D995B002CC7D0 /* SZSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 605AC505192D995B002CC7D0 /* SZSegmentedControl.m */; };
 		608159AF191DCC36008A06CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608159AE191DCC36008A06CE /* Foundation.framework */; };
 		608159B1191DCC36008A06CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608159B0191DCC36008A06CE /* CoreGraphics.framework */; };
 		608159B3191DCC36008A06CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608159B2191DCC36008A06CE /* UIKit.framework */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		605AC504192D995B002CC7D0 /* SZSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZSegmentedControl.h; path = ../SZFramework/SZSegmentedControl.h; sourceTree = "<group>"; };
+		605AC505192D995B002CC7D0 /* SZSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZSegmentedControl.m; path = ../SZFramework/SZSegmentedControl.m; sourceTree = "<group>"; };
 		608159AB191DCC36008A06CE /* SZFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608159AE191DCC36008A06CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		608159B0191DCC36008A06CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -341,6 +344,8 @@
 		60C5D8E51921EE2800B8CDB5 /* 008_C */ = {
 			isa = PBXGroup;
 			children = (
+				605AC504192D995B002CC7D0 /* SZSegmentedControl.h */,
+				605AC505192D995B002CC7D0 /* SZSegmentedControl.m */,
 				60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */,
 				60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */,
 				60DCE3AE19231A4900CFD09D /* SZAuthorizeC.h */,
@@ -514,6 +519,7 @@
 				608159BB191DCC36008A06CE /* main.m in Sources */,
 				608159E5191F59C5008A06CE /* NSArray+JSON.m in Sources */,
 				60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */,
+				605AC506192D995B002CC7D0 /* SZSegmentedControl.m in Sources */,
 				60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
 				60CD901C1924499A00F97C12 /* TestViewController.m in Sources */,

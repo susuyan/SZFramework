@@ -46,14 +46,14 @@ DEPENDENCIES:
   - SVPullToRefresh (~> 0.4.1)
 
 SPEC CHECKSUMS:
-  AFNetworking: 01aa7c3aa9a200b94943e54072a4373f14b3d219
-  DACircularProgress: 659d6fd11b5fc099c13ba9350239d9dca324916a
-  FMDB: 8b6b69b1164e3007d7f4b3b3719e667602ec247e
-  JDStatusBarNotification: a77275c66f1dfb1d1e4c2a49ab5a6498cb5a9b62
-  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
-  MWPhotoBrowser: b85e89fcf0575062f32c472d389265dce1f068e1
-  PSTCollectionView: fb2ad2790c6efa306b2caf10315b2c1464d1f5c6
-  SDWebImage: 1a62010700adbba823b621fc217906739dbf6aa5
-  SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  DACircularProgress: 3b41941891a56dc6aa17971f5322a9a38a6f446e
+  FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
+  JDStatusBarNotification: c68611370dedc0ef865fb0fc1768dfbaf8fd961f
+  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  MWPhotoBrowser: 4efcdb9da34751f97992128a5356f3929d1af537
+  PSTCollectionView: e82c1a71ec6469f88490b674c0f66f0bbf1de001
+  SDWebImage: 571295c8acbb699505a0f68e54506147c3de9ea7
+  SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1

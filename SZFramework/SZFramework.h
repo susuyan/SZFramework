@@ -48,6 +48,7 @@
 // 008_C
 #import "SZOpenURLManager.h"
 #import "SZAuthorizeC.h"
+#import "SZSegmentedControl.h"
 
 // 009
 #import "SZImageHelper.h"
