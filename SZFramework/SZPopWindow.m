@@ -53,6 +53,9 @@
     [UIView animateWithDuration:0.3 animations:^{
         self.alpha = 0;
     } completion:^(BOOL finished) {
+        for (UIView *v in self.subviews) {
+            [v removeFromSuperview];
+        }
         [self removeFromSuperview];
     }];
 }
