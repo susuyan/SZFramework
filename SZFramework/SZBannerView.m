@@ -46,8 +46,12 @@
     [self bindImages:imageNameArray];
     
     //self.currentPage = 0;
-    self.scrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
+    //self.scrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
     if (enable) {
+        if (self.autoScrollTimer) {
+            [self.autoScrollTimer invalidate];
+            self.autoScrollTimer = nil;
+        }
         self.autoScrollEnable = enable;
         self.autoScrollTimeInterval = 3.0;
         self.autoScrollTimer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(runScroll) userInfo:nil repeats:YES];
