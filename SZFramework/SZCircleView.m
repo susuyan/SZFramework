@@ -9,11 +9,13 @@
 #import "SZCircleView.h"
 
 static const NSInteger kFullPercent = 100;
-static const CGFloat kAnimationTime = 1.5;
+static const CGFloat kAnimationTime = 0.5;
 static const CGFloat kRoundTopHeight = 0.0;
 //static const CGFloat kColorViewHeight = 230;
 
 @interface SZCircleView () {
+    UIImageView *_bg;
+    
     UIView* _leftView;
     UIView* _rightView;
     
@@ -40,9 +42,8 @@ static const CGFloat kRoundTopHeight = 0.0;
     self = [super initWithFrame:frame];
     if (self) {
         
-        UIImageView *bg = [[UIImageView alloc] initWithFrame:self.bounds];
-        bg.image = [UIImage imageNamed:@"circle_back.png"];
-        [self addSubview:bg];
+        _bg = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self addSubview:_bg];
         
         CGSize size = frame.size;
         CGFloat ww = size.width;
@@ -52,18 +53,13 @@ static const CGFloat kRoundTopHeight = 0.0;
         // 左边的圆
         _leftView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, ww/2, ww)];
         
-        UIImageView *leftImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ww, ww)];
-        leftImageView.image = [UIImage imageNamed:@"circle_forehead.png"];
-        [_leftView addSubview: leftImageView];
+
         _leftView.clipsToBounds = YES;
         
         [self addSubview: _leftView];
         
         // 右边的圆
         _rightView = [[UIView alloc] initWithFrame: CGRectMake(ww/2, 0, ww/2, ww)];
-        UIImageView *rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(-ww/2, 0, ww, ww)];
-        rightImageView.image = [UIImage imageNamed:@"circle_forehead.png"];
-        [_rightView addSubview: rightImageView];
         _rightView.clipsToBounds = YES;
         
         [self addSubview: _rightView];
@@ -81,7 +77,8 @@ static const CGFloat kRoundTopHeight = 0.0;
         
         CALayer* roundLayer1l = [[CALayer alloc] init];
         roundLayer1l.masksToBounds = YES;
-        roundLayer1l.frame = CGRectMake(_maskView1.width/2 - kRoundTopHeight/2, 0, kRoundTopHeight, kRoundTopHeight);
+        CGRect frame = _maskView1.frame;
+        roundLayer1l.frame = CGRectMake(frame.size.width/2 - kRoundTopHeight/2, 0, kRoundTopHeight, kRoundTopHeight);
         roundLayer1l.cornerRadius = CGRectGetHeight(roundLayer1l.frame)/2;
         roundLayer1l.backgroundColor = [UIColor blackColor].CGColor;
         [_maskView1.layer addSublayer: roundLayer1l];
@@ -90,7 +87,7 @@ static const CGFloat kRoundTopHeight = 0.0;
         // 步数显示圆角的遮罩
         _roundLayer = [[CALayer alloc] init];
         _roundLayer.masksToBounds = YES;
-        _roundLayer.frame = CGRectMake(-kRoundTopHeight/2, _maskView1.height-kRoundTopHeight, kRoundTopHeight, kRoundTopHeight);
+        _roundLayer.frame = CGRectMake(-kRoundTopHeight/2, frame.size.height-kRoundTopHeight, kRoundTopHeight, kRoundTopHeight);
         _roundLayer.cornerRadius = CGRectGetHeight(_roundLayer.frame)/2;
         _roundLayer.backgroundColor = [UIColor blackColor].CGColor;
         [_maskLayer1 addSublayer: _roundLayer];
@@ -111,9 +108,11 @@ static const CGFloat kRoundTopHeight = 0.0;
         [_maskView2.layer addSublayer: _maskLayer2];
         
         
+        frame = _maskView2.frame;
+        
         CALayer* roundLayer2 = [[CALayer alloc] init];
         roundLayer2.masksToBounds = YES;
-        roundLayer2.frame = CGRectMake(_maskView2.width-kRoundTopHeight/2, 0, kRoundTopHeight, kRoundTopHeight);
+        roundLayer2.frame = CGRectMake(frame.size.width-kRoundTopHeight/2, 0, kRoundTopHeight, kRoundTopHeight);
         roundLayer2.cornerRadius = CGRectGetHeight(roundLayer2.frame)/2;
         roundLayer2.backgroundColor = [UIColor blackColor].CGColor;
         [_maskLayer2 addSublayer: roundLayer2];
@@ -125,6 +124,17 @@ static const CGFloat kRoundTopHeight = 0.0;
     return self;
 }
 
+- (void)bindLeftImage:(UIImage *)leftImage rightImage:(UIImage *)rightImage backgroundImage:(UIImage *)backgroundImage {
+    CGFloat ww = self.frame.size.width;
+    UIImageView *leftImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ww, ww)];
+    leftImageView.image = leftImage;
+    [_leftView addSubview: leftImageView];
+    UIImageView *rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(-ww/2, 0, ww, ww)];
+    rightImageView.image = rightImage;
+    [_rightView addSubview: rightImageView];
+    
+    _bg.image = backgroundImage;
+}
 // 直接设置步数
 - (void) setPercent:(NSInteger)percent {
     

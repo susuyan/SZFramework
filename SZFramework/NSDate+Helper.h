@@ -17,6 +17,7 @@
 - (NSString*)formatTime ;
 
 - (NSString*)formatDate ;
+- (NSString *)formatDateWithNoWeek;
 
 - (NSString*)formatShortTime;
 

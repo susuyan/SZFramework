@@ -98,6 +98,15 @@
     return [formatter stringFromDate:self];
 }
 
+- (NSString *)formatDateWithNoWeek {
+    static NSDateFormatter* formatter = nil;
+    if (!formatter) {
+        formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = NSLocalizedString(@"LLLL d, YYYY", @"Date format:July 27, 2009");
+        //formatter.locale = TTCurrentLocale();
+    }
+    return [formatter stringFromDate:self];
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)formatShortTime {

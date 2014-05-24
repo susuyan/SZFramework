@@ -10,5 +10,6 @@
 
 @interface SZCircleView : UIView
 @property (assign, nonatomic) NSInteger percent;
+- (void)bindLeftImage:(UIImage *)leftImage rightImage:(UIImage *)rightImage backgroundImage:(UIImage *)backgroundImage;
 - (void)animationWithPercent:(NSInteger)percent;
 @end
