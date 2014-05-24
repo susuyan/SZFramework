@@ -10,6 +10,7 @@
 
 #define kSZSegmentedControlNormalColor [UIColor blackColor]
 #define kSZSegmentedControlHighlightedColor [UIColor whiteColor]
+#define kSZSegmentedControlTintColor [UIColor colorWithRed:1 green:92 blue:201 alpha:1]
 
 @interface SZSegmentedButton : UIButton
 @property (assign, nonatomic) NSInteger index;
@@ -41,12 +42,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.backgroundColor = [UIColor lightGrayColor];
-        
+        self.backgroundColor = [UIColor whiteColor];
         self.selectedIndex = 0;
         self.items = items;
         
-        self.backgroundImageView = [[UIImageView alloc] initWithFrame:frame];
+        self.backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 310, 30)];
+        self.backgroundImageView.layer.borderWidth = 1.5;
+        self.backgroundImageView.layer.borderColor = kSZSegmentedControlTintColor.CGColor;
         [self addSubview:self.backgroundImageView];
         
         NSUInteger itemCount = items.count;
@@ -73,7 +75,8 @@
     
     button.index = index;
     
-    [button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    //[button setTintColor:kSZSegmentedControlTintColor];
+    [button setTitleColor:kSZSegmentedControlTintColor forState:(UIControlStateNormal)];
     [button setTitleColor:[UIColor whiteColor] forState:(UIControlStateSelected)];
     [button setTitleColor:[UIColor whiteColor] forState:(UIControlStateHighlighted)];
     

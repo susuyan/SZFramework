@@ -45,7 +45,8 @@
 - (void)bindImageNameArray:(NSArray *)imageNameArray autoSCrollEnable:(BOOL)enable {
     [self bindImages:imageNameArray];
     
-    self.currentPage = 0;
+    //self.currentPage = 0;
+    self.scrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
     if (enable) {
         self.autoScrollEnable = enable;
         self.autoScrollTimeInterval = 3.0;
