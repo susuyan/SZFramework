@@ -25,5 +25,6 @@ Pod::Spec.new do |s|
     s.dependency 'JDStatusBarNotification', '~> 1.4.8' 
     s.dependency 'TOWebViewController', '~> 2.0.6'
     s.dependency 'SVPullToRefresh'
+    s.dependency 'pop'
 #s.dependency 'Haneke', '~> 0.1'
 end
