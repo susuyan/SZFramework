@@ -9,17 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #define kSZSegmentedControlWidth 320
-#define kSZSegmentedControlHeight 40
+#define kSZSegmentedControlHeight 34
 
 @protocol SZSegmentedControlDelegate <NSObject>
 - (void)onSelectedIndex:(NSInteger)index;
 @end
 
 @interface SZSegmentedControl : UIView
-@property (assign, nonatomic) NSInteger selectedIndex;
 @property (assign, nonatomic) id<SZSegmentedControlDelegate> delegate;
-- (id)initWithFrame:(CGRect)frame andItems:(NSArray *)items;
-- (void)bindBackgroundImage:(UIImage *)image;
-- (void)bindSelectedIndex:(NSInteger)index;
-- (void)triggerSegmentedControlEnabled:(BOOL)enabled;
+- (id)initWithFrame:(CGRect)frame items:(NSArray *)items tintColor:(UIColor *)color;
+- (void)setSelectedIndex:(NSInteger)index;
 @end

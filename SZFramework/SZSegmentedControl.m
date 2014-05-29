@@ -8,111 +8,77 @@
 
 #import "SZSegmentedControl.h"
 
-#define kSZSegmentedControlNormalColor [UIColor blackColor]
-#define kSZSegmentedControlHighlightedColor [UIColor whiteColor]
-#define kSZSegmentedControlTintColor [UIColor colorWithRed:1 green:92 blue:201 alpha:1]
-
-@interface SZSegmentedButton : UIButton
-@property (assign, nonatomic) NSInteger index;
-@end
-
-@implementation SZSegmentedButton
-//- (void)setHighlighted:(BOOL)highlighted {
-//    [super setHighlighted:highlighted];
-//    
-//    self.backgroundColor = highlighted ? kSZSegmentedControlHighlightedColor: kSZSegmentedControlNormalColor;
-//}
-//
-//- (void)setSelected:(BOOL)selected {
-//    [super setSelected:selected];
-//    
-//    self.backgroundColor = selected ? kSZSegmentedControlHighlightedColor: kSZSegmentedControlNormalColor;
-//}
-@end
-
 @interface SZSegmentedControl ()
 @property (strong, nonatomic) NSArray *items;
-@property (strong, nonatomic) NSMutableArray *buttons;
-@property (strong, nonatomic) UIImageView *backgroundImageView;
+@property (strong, nonatomic) NSMutableArray *buttonArray;
+@property (strong, nonatomic) UIColor *tintColor;
+@property (assign, nonatomic) NSInteger selectedIndex;
+@property (strong, nonatomic) UIView *selectedIndicator;
 @end
 
 @implementation SZSegmentedControl
 
-- (id)initWithFrame:(CGRect)frame andItems:(NSArray *)items {
+- (id)initWithFrame:(CGRect)frame items:(NSArray *)items tintColor:(UIColor *)color {
     self = [super initWithFrame:frame];
     if (self) {
         
         self.backgroundColor = [UIColor whiteColor];
-        self.selectedIndex = 0;
         self.items = items;
-        
-        self.backgroundImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 310, 30)];
-        self.backgroundImageView.layer.borderWidth = 1.5;
-        self.backgroundImageView.layer.borderColor = kSZSegmentedControlTintColor.CGColor;
-        [self addSubview:self.backgroundImageView];
+        self.tintColor = color;
         
         NSUInteger itemCount = items.count;
         CGFloat itemWidth = kSZSegmentedControlWidth / itemCount;
         
-        self.buttons = [NSMutableArray array];
+        self.buttonArray = [NSMutableArray array];
         for (int i = 0; i < itemCount; i++) {
             CGRect frame = CGRectMake(itemWidth * i, 0, itemWidth, kSZSegmentedControlHeight);
-            SZSegmentedButton *button = [self getButtonWithTitle:self.items[i] frame:frame index:i];
-            [self.buttons addObject:button];
+            UIButton *button = [self getButtonWithTitle:self.items[i] frame:frame index:i];
+            [self.buttonArray addObject:button];
             [self addSubview:button];
         }
-        [self.buttons[self.selectedIndex] setSelected:YES];
+        
+        self.selectedIndex = 0;
+        [[self.buttonArray firstObject] setSelected:YES];
+        self.selectedIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, kSZSegmentedControlHeight - 4, itemWidth, 4)];
+        self.selectedIndicator.backgroundColor = self.tintColor;
+        [self addSubview:self.selectedIndicator];
     }
     return self;
 }
 
-- (SZSegmentedButton *)getButtonWithTitle:(NSString *)title frame:(CGRect)frame index:(NSUInteger)index {
-    SZSegmentedButton *button = [SZSegmentedButton buttonWithType:(UIButtonTypeSystem)];
-    
+- (UIButton *)getButtonWithTitle:(NSString *)title frame:(CGRect)frame index:(NSUInteger)index {
+    UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [button setTitle:title forState:(UIControlStateNormal)];
-    
     button.frame = frame;
-    
-    button.index = index;
-    
-    //[button setTintColor:kSZSegmentedControlTintColor];
-    [button setTitleColor:kSZSegmentedControlTintColor forState:(UIControlStateNormal)];
-    [button setTitleColor:[UIColor whiteColor] forState:(UIControlStateSelected)];
-    [button setTitleColor:[UIColor whiteColor] forState:(UIControlStateHighlighted)];
-    
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    [button setTitleColor:self.tintColor forState:(UIControlStateNormal)];
     [button addTarget:self action:@selector(onSegmentedButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
-    
     return button;
 }
 
-- (void)bindBackgroundImage:(UIImage *)image {
-    self.backgroundImageView.image = image;
-}
-
-- (void)onSegmentedButtonPressed:(SZSegmentedButton *)button {
-    
-    NSInteger selectedIndex = button.index;
-    
-    SZSegmentedButton *previousButton = self.buttons[self.selectedIndex];
-    SZSegmentedButton *currentButton = self.buttons[selectedIndex];
-    
-    self.selectedIndex = selectedIndex;
-    previousButton.selected = NO;
-    currentButton.selected = YES;
-    if ([self.delegate respondsToSelector:@selector(onSelectedIndex:)]) {
-        [self.delegate onSelectedIndex:selectedIndex];
+- (void)onSegmentedButtonPressed:(UIButton *)button {
+    NSInteger buttonIndex = [self.buttonArray indexOfObject:button];
+    if (buttonIndex == self.selectedIndex) {
+        return;
     }
+    
+    [[self.buttonArray objectAtIndex:self.selectedIndex] setSelected:NO];
+    _selectedIndex = buttonIndex;
+    [button setSelected:YES];
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        CGRect frame = self.selectedIndicator.frame;
+        frame.origin.x = button.frame.origin.x;
+        self.selectedIndicator.frame = frame;
+    } completion:^(BOOL finished) {
+        if ([self.delegate respondsToSelector:@selector(onSelectedIndex:)]) {
+            [self.delegate onSelectedIndex:buttonIndex];
+        }
+    }];
 }
 
-- (void)triggerSegmentedControlEnabled:(BOOL)enabled {
-    for (SZSegmentedButton *button in self.buttons) {
-        button.userInteractionEnabled = enabled;
-    }
-}
-
-- (void)bindSelectedIndex:(NSInteger)index {
-    SZSegmentedButton *button = self.buttons[index];
-    [self onSegmentedButtonPressed:button];
+- (void)setSelectedIndex:(NSInteger)index {
+    [self onSegmentedButtonPressed:self.buttonArray[index]];
 }
 
 @end

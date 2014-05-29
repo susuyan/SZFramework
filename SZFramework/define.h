@@ -32,7 +32,7 @@
 
 #define StoryBoard(_name_) [UIStoryboard storyboardWithName:_name_ bundle:nil]
 
-#define weak_self(v) __weak typeof(v) wself = v
+#define WeakSelf __weak typeof(self) weakSelf = self;
 
 #define AFHTTPRequestOperationManeger(__url_string__) [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:__url_string__]]
 
