@@ -28,10 +28,11 @@
 // 003
 #import "UIDevice+DeviceType.h"
 
-// 004
+// 004_M_category
 #import "UIImage+Helper.h"
 #import "UIImage+ImageEffects.h"
 #import "NSDate+Helper.h"
+#import "UIColor+CustomColors.h"
 
 // 005
 #import "UIView+Helper.h"
@@ -52,8 +53,10 @@
 #import "SZAuthorizeC.h"
 #import "SZSegmentedControl.h"
 
-// 009
+// 009_M
 #import "SZImageHelper.h"
+#import "SZPresentingAnimator.h"
+#import "SZDismissingAnimator.h"
 
 // 100
 #import "SZCommon.h"
