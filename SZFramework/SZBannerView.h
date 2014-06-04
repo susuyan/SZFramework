@@ -15,5 +15,5 @@
 @interface SZBannerView : UIView
 @property (assign, nonatomic) id<SZBannerViewDelegate> delegate;
 @property (assign, nonatomic) CGFloat autoScrollTimeInterval;
-- (void)bindImageNameArray:(NSArray *)imageNameArray autoSCrollEnable:(BOOL)enable;
+- (void)bindImageNameArray:(NSArray *)imageNameArray autoSCrollEnable:(BOOL)enable titles:(NSArray *)titles;
 @end

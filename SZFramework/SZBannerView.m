@@ -42,8 +42,8 @@
     return self;
 }
 
-- (void)bindImageNameArray:(NSArray *)imageNameArray autoSCrollEnable:(BOOL)enable {
-    [self bindImages:imageNameArray];
+- (void)bindImageNameArray:(NSArray *)imageNameArray autoSCrollEnable:(BOOL)enable titles:(NSArray *)titles {
+    [self bindImages:imageNameArray titles:titles];
     
     //self.currentPage = 0;
     //self.scrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
@@ -68,7 +68,7 @@
     }];
 }
 
-- (void)bindImages:(NSArray *)arr {
+- (void)bindImages:(NSArray *)arr titles:(NSArray *)titles {
     //1 + (2 to n-1) + n
     NSString *oldLast = [arr lastObject];
     NSString *oldFirst = [arr firstObject];
@@ -78,6 +78,10 @@
     self.imageNameArray = [NSMutableArray arrayWithArray:arr];
     [self.imageNameArray insertObject:newFirst atIndex:0];
     [self.imageNameArray addObject:newLast];
+    
+    NSMutableArray *newTitles = [NSMutableArray arrayWithArray:titles];
+    [newTitles insertObject:[titles lastObject] atIndex:0];
+    [newTitles addObject:[titles firstObject]];
     
     NSUInteger imgViewCount = self.imageNameArray.count;
     self.imageViewArray = [NSMutableArray arrayWithCapacity:imgViewCount];
@@ -101,16 +105,24 @@
         frame.origin.x = frame.size.width * i;
         [self.imageViewArray[i] setFrame:frame];
         [self.imageViewArray[i] setUserInteractionEnabled:YES];
-        [self.imageViewArray[i] setTag:IMAGE_TAG_BASE + i];
+        [self.imageViewArray[i] setTag:IMAGE_TAG_BASE + i - 1];
         [self.scrollView addSubview:self.imageViewArray[i]];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(presseImageAtIndex:)];
         [self.imageViewArray[i] addGestureRecognizer:tap];
+        
+        UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(frame.origin.x, self.frame.size.height - 20, frame.size.width, 20)];
+        title.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+        title.font = [UIFont systemFontOfSize:13];
+        title.text = newTitles[i];
+        title.textColor = [UIColor whiteColor];
+        [self.scrollView addSubview:title];
     }
-    
-    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - PAGECONTROL_WIDTH)/2, self.scrollView.bounds.size.height - PAGECONTROL_HEIGHT, PAGECONTROL_WIDTH, PAGECONTROL_HEIGHT)];
-    self.pageControl.numberOfPages = self.imageViewArray.count - 2;
-    self.pageControl.currentPage = 0;
-    [self addSubview:self.pageControl];
+    [self.imageViewArray[0] setTag:IMAGE_TAG_BASE + self.imageViewArray.count - 3];
+    [[self.imageViewArray lastObject] setTag:IMAGE_TAG_BASE];
+//    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - PAGECONTROL_WIDTH)/2, self.scrollView.bounds.size.height - PAGECONTROL_HEIGHT, PAGECONTROL_WIDTH, PAGECONTROL_HEIGHT)];
+//    self.pageControl.numberOfPages = self.imageViewArray.count - 2;
+//    self.pageControl.currentPage = 0;
+//    [self addSubview:self.pageControl];
 }
 
 #pragma mark - image pressed method
@@ -131,7 +143,7 @@
     else if (self.scrollView.contentOffset.x == self.scrollView.frame.size.width * (self.imageViewArray.count-1)) {
         self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
     }
-    self.pageControl.currentPage = self.scrollView.contentOffset.x / self.scrollView.frame.size.width - 1;
+    //self.pageControl.currentPage = self.scrollView.contentOffset.x / self.scrollView.frame.size.width - 1;
 }
 
 @end

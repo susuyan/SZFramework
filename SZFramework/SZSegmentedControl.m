@@ -12,7 +12,6 @@
 @property (strong, nonatomic) NSArray *items;
 @property (strong, nonatomic) NSMutableArray *buttonArray;
 @property (strong, nonatomic) UIColor *tintColor;
-@property (assign, nonatomic) NSInteger selectedIndex;
 @property (strong, nonatomic) UIView *selectedIndicator;
 @end
 
@@ -71,8 +70,8 @@
         frame.origin.x = button.frame.origin.x;
         self.selectedIndicator.frame = frame;
     } completion:^(BOOL finished) {
-        if ([self.delegate respondsToSelector:@selector(onSelectedIndex:)]) {
-            [self.delegate onSelectedIndex:buttonIndex];
+        if ([self.delegate respondsToSelector:@selector(onSelectedIndex:segmentedControl:)]) {
+            [self.delegate onSelectedIndex:buttonIndex segmentedControl:self];
         }
     }];
 }
