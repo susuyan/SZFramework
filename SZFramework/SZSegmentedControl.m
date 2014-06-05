@@ -38,7 +38,11 @@
         
         self.selectedIndex = 0;
         [[self.buttonArray firstObject] setSelected:YES];
-        self.selectedIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, kSZSegmentedControlHeight - 4, itemWidth, 4)];
+        //self.selectedIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, kSZSegmentedControlHeight - 4, itemWidth, 3)];
+        CGRect frame = [[[self.buttonArray firstObject] titleLabel] frame];
+        frame.origin.y = kSZSegmentedControlHeight - 4;
+        frame.size.height = 3;
+        self.selectedIndicator = [[UIView alloc] initWithFrame:frame];
         self.selectedIndicator.backgroundColor = self.tintColor;
         [self addSubview:self.selectedIndicator];
     }
@@ -49,9 +53,13 @@
     UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [button setTitle:title forState:(UIControlStateNormal)];
     button.frame = frame;
-    button.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     [button setTitleColor:self.tintColor forState:(UIControlStateNormal)];
     [button addTarget:self action:@selector(onSegmentedButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
+    
+    //
+    [button.titleLabel sizeToFit];
+    
     return button;
 }
 
@@ -66,8 +74,10 @@
     [button setSelected:YES];
     
     [UIView animateWithDuration:0.2 animations:^{
-        CGRect frame = self.selectedIndicator.frame;
-        frame.origin.x = button.frame.origin.x;
+        UIButton *button = [self.buttonArray objectAtIndex:buttonIndex];
+        UILabel *label = [[self.buttonArray objectAtIndex:buttonIndex] titleLabel];
+        CGRect frame = CGRectMake(button.frame.origin.x + label.frame.origin.x, kSZSegmentedControlHeight - 4, label.frame.size.width, 3);
+        
         self.selectedIndicator.frame = frame;
     } completion:^(BOOL finished) {
         if ([self.delegate respondsToSelector:@selector(onSelectedIndex:segmentedControl:)]) {
