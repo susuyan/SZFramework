@@ -53,7 +53,8 @@
     UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [button setTitle:title forState:(UIControlStateNormal)];
     button.frame = frame;
-    button.titleLabel.font = [UIFont boldSystemFontOfSize:17];
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+    button.titleLabel.adjustsFontSizeToFitWidth = YES;
     [button setTitleColor:self.tintColor forState:(UIControlStateNormal)];
     [button addTarget:self action:@selector(onSegmentedButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
     
