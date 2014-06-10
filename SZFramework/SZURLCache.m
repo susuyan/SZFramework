@@ -28,24 +28,31 @@
 
 + (NSData *)getCachedDataForRequest:(NSURLRequest *)request {
     NSData *data = nil;
-    if ([[NSURLCache sharedURLCache] cachedResponseForRequest:request]) {
-        id responseObject = [[NSURLCache sharedURLCache] cachedResponseForRequest:request];
-        NSError *error = nil;
-        data = [NSJSONSerialization dataWithJSONObject:responseObject options:0 error:&error];
-        if (!error) {
-            return data;
-        } else {
-            return nil;
-        }
+    NSString *key = [[request.URL absoluteString] md5];
+    NSDictionary *cachedDictionary = [NSDictionary dictionaryWithContentsOfFile:CachePath];
+    data = [cachedDictionary objectForKey:key];
+    if (data) {
+        return data;
+    }
+    return nil;
+}
+
+#define CacheDateUserInfoKey @"CacheDateUserInfoKey"
++ (void)cacheDate:(NSDate *)date forRequest:(NSURLRequest *)request {
+    NSString *key = [[request.URL absoluteString] md5];
+    NSMutableDictionary *cachedDictionary = [[NSUserDefaults standardUserDefaults] objectForKey:CacheDateUserInfoKey];
+    if (cachedDictionary) {
+        [cachedDictionary setObject:date forKey:key];
+        [[NSUserDefaults standardUserDefaults] setObject:cachedDictionary forKey:CacheDateUserInfoKey];
     } else {
-        NSString *key = [[request.URL absoluteString] md5];
-        NSDictionary *cachedDictionary = [NSDictionary dictionaryWithContentsOfFile:CachePath];
-        data = [cachedDictionary objectForKey:key];
-        if (data) {
-            return data;
-        } else {
-            return nil;
-        }
+        [[NSUserDefaults standardUserDefaults] setObject:@{key: date} forKey:CacheDateUserInfoKey];
+    }
+}
++ (NSDate *)getCachedDateForRequest:(NSURLRequest *)request {
+    NSString *key = [[request.URL absoluteString] md5];
+    NSDictionary *cachedDictionary = [[NSUserDefaults standardUserDefaults] objectForKey:CacheDateUserInfoKey];
+    if (cachedDictionary) {
+        return [cachedDictionary objectForKey:key];
     }
     return nil;
 }
