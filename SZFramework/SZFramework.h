@@ -57,6 +57,7 @@
 #import "SZImageHelper.h"
 #import "SZPresentingAnimator.h"
 #import "SZDismissingAnimator.h"
+#import "SZURLCache.h"
 
 // 100
 #import "SZCommon.h"

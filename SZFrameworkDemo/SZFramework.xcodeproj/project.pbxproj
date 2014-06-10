@@ -49,6 +49,7 @@
 		60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3BB1923348100CFD09D /* NSDate+Helper.m */; };
 		60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */; };
 		60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */; };
+		60E5ED481946CA4000DA8C51 /* SZURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5ED471946CA4000DA8C51 /* SZURLCache.m */; };
 		60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAD9D2192256D1008046F9 /* Reveal.framework */; };
 		60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9D81922578D008046F9 /* SZPopWindow.m */; };
 		60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAD9DB19225EFD008046F9 /* SZNotificationView.m */; };
@@ -139,6 +140,8 @@
 		60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "../SZFramework/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		60DCE3EC1923689D00CFD09D /* UIImageView+BlurImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+BlurImage.h"; path = "../SZFramework/UIImageView+BlurImage.h"; sourceTree = "<group>"; };
 		60DCE3ED1923689D00CFD09D /* UIImageView+BlurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+BlurImage.m"; path = "../SZFramework/UIImageView+BlurImage.m"; sourceTree = "<group>"; };
+		60E5ED461946CA4000DA8C51 /* SZURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZURLCache.h; path = ../SZFramework/SZURLCache.h; sourceTree = "<group>"; };
+		60E5ED471946CA4000DA8C51 /* SZURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZURLCache.m; path = ../SZFramework/SZURLCache.m; sourceTree = "<group>"; };
 		60FAD9D2192256D1008046F9 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "../../../../Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<group>"; };
 		60FAD9D71922578D008046F9 /* SZPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPopWindow.h; path = ../SZFramework/SZPopWindow.h; sourceTree = "<group>"; };
 		60FAD9D81922578D008046F9 /* SZPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopWindow.m; path = ../SZFramework/SZPopWindow.m; sourceTree = "<group>"; };
@@ -384,6 +387,8 @@
 				60BE06AE19370136005A897A /* SZDismissingAnimator.m */,
 				60CD900E19242DD600F97C12 /* SZImageHelper.h */,
 				60CD900F19242DD600F97C12 /* SZImageHelper.m */,
+				60E5ED461946CA4000DA8C51 /* SZURLCache.h */,
+				60E5ED471946CA4000DA8C51 /* SZURLCache.m */,
 			);
 			name = 009_M;
 			sourceTree = "<group>";
@@ -561,6 +566,7 @@
 				60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */,
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
 				60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */,
+				60E5ED481946CA4000DA8C51 /* SZURLCache.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

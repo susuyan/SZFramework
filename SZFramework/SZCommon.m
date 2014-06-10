@@ -134,4 +134,5 @@
     MBProgressHUD *global = (MBProgressHUD*)[view viewWithTag: kGlobalHUDTag];
     [global hide: YES afterDelay: 0];
 }
+
 @end
