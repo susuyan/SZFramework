@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.dependency 'FMDB', '~> 2.1'
     s.dependency 'SDWebImage', '~> 3.5.4'
     s.dependency 'DACircularProgress', '~> 2.2.0'
- #   s.dependency 'MWPhotoBrowser', '~> 1.4.0'
+    s.dependency 'MWPhotoBrowser', '~> 1.4.0'
     s.dependency 'JDStatusBarNotification', '~> 1.4.8' 
     s.dependency 'TOWebViewController', '~> 2.0.6'
     s.dependency 'SVPullToRefresh'
