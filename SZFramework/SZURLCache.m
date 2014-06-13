@@ -45,7 +45,7 @@
         [cachedDictionary setObject:date forKey:key];
         [[NSUserDefaults standardUserDefaults] setObject:cachedDictionary forKey:CacheDateUserInfoKey];
     } else {
-        [[NSUserDefaults standardUserDefaults] setObject:@{key: date} forKey:CacheDateUserInfoKey];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSMutableDictionary dictionaryWithObject:date forKey:key] forKey:CacheDateUserInfoKey];
     }
 }
 + (NSDate *)getCachedDateForRequest:(NSURLRequest *)request {

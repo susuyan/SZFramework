@@ -43,6 +43,7 @@
 
 // 007_V
 #import "SZPopWindow.h"
+#import "SZClearPopWindow.h"
 #import "SZNotificationView.h"
 #import "SZPlaceholderTextView.h"
 #import "SZBannerView.h"
