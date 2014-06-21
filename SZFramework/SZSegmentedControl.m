@@ -7,6 +7,7 @@
 //
 
 #import "SZSegmentedControl.h"
+#import "define.h"
 
 @interface SZSegmentedControl ()
 @property (strong, nonatomic) NSArray *items;
@@ -53,9 +54,10 @@
     UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
     [button setTitle:title forState:(UIControlStateNormal)];
     button.frame = frame;
-    button.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+    button.titleLabel.font = [UIFont systemFontOfSize:15];
     button.titleLabel.adjustsFontSizeToFitWidth = YES;
-    [button setTitleColor:self.tintColor forState:(UIControlStateNormal)];
+    //[button setTitleColor:self.tintColor forState:(UIControlStateNormal)];
+    [button setTitleColor:RGB_HEX(0x1f1f1f) forState:(UIControlStateNormal)];
     [button addTarget:self action:@selector(onSegmentedButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
     
     //

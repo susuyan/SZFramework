@@ -12,6 +12,7 @@
 
 #import "SZBannerView.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import "define.h"
 
 @interface SZBannerView () <UIScrollViewDelegate>
 @property (strong, nonatomic) NSMutableArray *imageNameArray;
@@ -110,11 +111,11 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(presseImageAtIndex:)];
         [self.imageViewArray[i] addGestureRecognizer:tap];
         
-        UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(frame.origin.x, self.frame.size.height - 24, frame.size.width, 24)];
-        title.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+        UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(frame.origin.x, self.frame.size.height - 26, frame.size.width, 26)];
+        title.backgroundColor = [UIColor colorWithWhite:1 alpha:0.85];
         title.font = [UIFont systemFontOfSize:13];
         title.text = newTitles[i];
-        title.textColor = [UIColor whiteColor];
+        title.textColor = [UIColor blackColor];
         [self.scrollView addSubview:title];
     }
     [self.imageViewArray[0] setTag:IMAGE_TAG_BASE + self.imageViewArray.count - 3];

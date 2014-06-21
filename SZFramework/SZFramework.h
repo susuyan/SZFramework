@@ -48,6 +48,7 @@
 #import "SZPlaceholderTextView.h"
 #import "SZBannerView.h"
 #import "SZCircleView.h"
+#import "SZButtonWithBadge.h"
 
 // 008_C
 #import "SZOpenURLManager.h"

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50C520C4A2434B44BB264408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4330BD9B7404D9C8733633C /* libPods.a */; };
 		60031D5219481E0100AEAE84 /* SZClearPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60031D5119481E0100AEAE84 /* SZClearPopWindow.m */; };
+		602E99F61951995100ADCDC3 /* SZButtonWithBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E99F51951995100ADCDC3 /* SZButtonWithBadge.m */; };
+		602E99F91951999B00ADCDC3 /* SZCustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E99F81951999B00ADCDC3 /* SZCustomBadge.m */; };
 		605AC506192D995B002CC7D0 /* SZSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 605AC505192D995B002CC7D0 /* SZSegmentedControl.m */; };
 		608159AF191DCC36008A06CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608159AE191DCC36008A06CE /* Foundation.framework */; };
 		608159B1191DCC36008A06CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608159B0191DCC36008A06CE /* CoreGraphics.framework */; };
@@ -70,6 +72,10 @@
 /* Begin PBXFileReference section */
 		60031D5019481E0100AEAE84 /* SZClearPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZClearPopWindow.h; path = ../SZFramework/SZClearPopWindow.h; sourceTree = "<group>"; };
 		60031D5119481E0100AEAE84 /* SZClearPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZClearPopWindow.m; path = ../SZFramework/SZClearPopWindow.m; sourceTree = "<group>"; };
+		602E99F41951995100ADCDC3 /* SZButtonWithBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZButtonWithBadge.h; path = ../SZFramework/SZButtonWithBadge.h; sourceTree = "<group>"; };
+		602E99F51951995100ADCDC3 /* SZButtonWithBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZButtonWithBadge.m; path = ../SZFramework/SZButtonWithBadge.m; sourceTree = "<group>"; };
+		602E99F71951999B00ADCDC3 /* SZCustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCustomBadge.h; path = ../SZFramework/SZCustomBadge.h; sourceTree = "<group>"; };
+		602E99F81951999B00ADCDC3 /* SZCustomBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZCustomBadge.m; path = ../SZFramework/SZCustomBadge.m; sourceTree = "<group>"; };
 		605AC504192D995B002CC7D0 /* SZSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZSegmentedControl.h; path = ../SZFramework/SZSegmentedControl.h; sourceTree = "<group>"; };
 		605AC505192D995B002CC7D0 /* SZSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZSegmentedControl.m; path = ../SZFramework/SZSegmentedControl.m; sourceTree = "<group>"; };
 		608159AB191DCC36008A06CE /* SZFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,6 +375,10 @@
 				60AA8851192E03AB00D7B928 /* SZBannerView.m */,
 				60CBA374192F3137004276A6 /* SZCircleView.h */,
 				60CBA375192F3137004276A6 /* SZCircleView.m */,
+				602E99F41951995100ADCDC3 /* SZButtonWithBadge.h */,
+				602E99F51951995100ADCDC3 /* SZButtonWithBadge.m */,
+				602E99F71951999B00ADCDC3 /* SZCustomBadge.h */,
+				602E99F81951999B00ADCDC3 /* SZCustomBadge.m */,
 			);
 			name = 007_V;
 			sourceTree = "<group>";
@@ -549,9 +559,11 @@
 				60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */,
 				608159F0191F60DA008A06CE /* NSString+MD5.m in Sources */,
 				60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */,
+				602E99F61951995100ADCDC3 /* SZButtonWithBadge.m in Sources */,
 				60CD90191924432600F97C12 /* SZPlaceholderTextView.m in Sources */,
 				60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */,
 				608159C5191DCC36008A06CE /* SZViewController.m in Sources */,
+				602E99F91951999B00ADCDC3 /* SZCustomBadge.m in Sources */,
 				60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */,
 				60BE06AF19370136005A897A /* SZDismissingAnimator.m in Sources */,
 				60031D5219481E0100AEAE84 /* SZClearPopWindow.m in Sources */,

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define kSZSegmentedControlWidth 320
-#define kSZSegmentedControlHeight 34
+#define kSZSegmentedControlHeight 36
 
 @class SZSegmentedControl;
 
