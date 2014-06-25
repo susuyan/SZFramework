@@ -35,6 +35,39 @@
     return [self colorWithRed:52 green:152 blue:219];
 }
 
++ (UIColor *)randomCustomColor {
+    static NSInteger seed = -1;
+    if (seed >= 0) {
+        NSInteger newSeed = 0;
+        do {
+            newSeed = arc4random() % 5;
+        } while (seed == newSeed);
+        seed = newSeed;
+    } else {
+        seed = arc4random() % 5;
+    }
+    switch (seed) {
+        case 0:
+            return [self customRedColor];
+            break;
+        case 1:
+            return [self customBlueColor];
+            break;
+        case 2:
+            return [self customGrayColor];
+            break;
+        case 3:
+            return [self customGreenColor];
+            break;
+        case 4:
+            return [self customYellowColor];
+            break;
+        default:
+            break;
+    }
+    return [UIColor blackColor];
+}
+
 #pragma mark - Private class methods
 
 + (UIColor *)colorWithRed:(NSUInteger)red

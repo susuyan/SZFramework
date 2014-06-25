@@ -114,7 +114,7 @@
         UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(frame.origin.x, self.frame.size.height - 26, frame.size.width, 26)];
         title.backgroundColor = [UIColor colorWithWhite:1 alpha:0.85];
         title.font = [UIFont systemFontOfSize:13];
-        title.text = newTitles[i];
+        title.text = [NSString stringWithFormat:@"   %@", newTitles[i]];
         title.textColor = [UIColor blackColor];
         [self.scrollView addSubview:title];
     }
