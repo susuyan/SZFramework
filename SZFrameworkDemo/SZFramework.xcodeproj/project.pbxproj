@@ -38,7 +38,13 @@
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 		60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA8851192E03AB00D7B928 /* SZBannerView.m */; };
+		60AC1407195D4270009A38F8 /* SZPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC1406195D4270009A38F8 /* SZPhotoView.m */; };
+		60AC140A195D461F009A38F8 /* SZPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC1409195D461F009A38F8 /* SZPhoto.m */; };
+		60AC140D195D485B009A38F8 /* SZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC140C195D485B009A38F8 /* SZPhotoBrowser.m */; };
+		60AC1410195D4BDB009A38F8 /* SZPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC140F195D4BDB009A38F8 /* SZPhotoLoadingView.m */; };
+		60AC1413195D4E1D009A38F8 /* SZPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC1412195D4E1D009A38F8 /* SZPhotoProgressView.m */; };
 		60ACCF0A192602D300538046 /* SZFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60ACCF09192602D300538046 /* SZFramework.bundle */; };
+		60B8A79F195FA9BF00D3D1AF /* SZPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B8A79E195FA9BF00D3D1AF /* SZPhotoViewController.m */; };
 		60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06A81936FA25005A897A /* SZPresentingAnimator.m */; };
 		60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AB1936FB21005A897A /* UIColor+CustomColors.m */; };
 		60BE06AF19370136005A897A /* SZDismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AE19370136005A897A /* SZDismissingAnimator.m */; };
@@ -123,7 +129,19 @@
 		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
 		60AA8850192E03AB00D7B928 /* SZBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZBannerView.h; path = ../SZFramework/SZBannerView.h; sourceTree = "<group>"; };
 		60AA8851192E03AB00D7B928 /* SZBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZBannerView.m; path = ../SZFramework/SZBannerView.m; sourceTree = "<group>"; };
+		60AC1405195D4270009A38F8 /* SZPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhotoView.h; path = ../SZFramework/SZPhotoView.h; sourceTree = "<group>"; };
+		60AC1406195D4270009A38F8 /* SZPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPhotoView.m; path = ../SZFramework/SZPhotoView.m; sourceTree = "<group>"; };
+		60AC1408195D461F009A38F8 /* SZPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhoto.h; path = ../SZFramework/SZPhoto.h; sourceTree = "<group>"; };
+		60AC1409195D461F009A38F8 /* SZPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPhoto.m; path = ../SZFramework/SZPhoto.m; sourceTree = "<group>"; };
+		60AC140B195D485B009A38F8 /* SZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhotoBrowser.h; path = ../SZFramework/SZPhotoBrowser.h; sourceTree = "<group>"; };
+		60AC140C195D485B009A38F8 /* SZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPhotoBrowser.m; path = ../SZFramework/SZPhotoBrowser.m; sourceTree = "<group>"; };
+		60AC140E195D4BDB009A38F8 /* SZPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhotoLoadingView.h; path = ../SZFramework/SZPhotoLoadingView.h; sourceTree = "<group>"; };
+		60AC140F195D4BDB009A38F8 /* SZPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPhotoLoadingView.m; path = ../SZFramework/SZPhotoLoadingView.m; sourceTree = "<group>"; };
+		60AC1411195D4E1D009A38F8 /* SZPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhotoProgressView.h; path = ../SZFramework/SZPhotoProgressView.h; sourceTree = "<group>"; };
+		60AC1412195D4E1D009A38F8 /* SZPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPhotoProgressView.m; path = ../SZFramework/SZPhotoProgressView.m; sourceTree = "<group>"; };
 		60ACCF09192602D300538046 /* SZFramework.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SZFramework.bundle; path = ../SZFramework/SZFramework.bundle; sourceTree = "<group>"; };
+		60B8A79D195FA9BF00D3D1AF /* SZPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhotoViewController.h; path = ../SZFramework/SZPhotoViewController.h; sourceTree = "<group>"; };
+		60B8A79E195FA9BF00D3D1AF /* SZPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPhotoViewController.m; path = ../SZFramework/SZPhotoViewController.m; sourceTree = "<group>"; };
 		60BE06A71936FA25005A897A /* SZPresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPresentingAnimator.h; path = ../SZFramework/SZPresentingAnimator.h; sourceTree = "<group>"; };
 		60BE06A81936FA25005A897A /* SZPresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPresentingAnimator.m; path = ../SZFramework/SZPresentingAnimator.m; sourceTree = "<group>"; };
 		60BE06AA1936FB21005A897A /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+CustomColors.h"; path = "../SZFramework/UIColor+CustomColors.h"; sourceTree = "<group>"; };
@@ -208,6 +226,7 @@
 				60815A12191F7FB2008A06CE /* 007_V */,
 				60C5D8E51921EE2800B8CDB5 /* 008_C */,
 				60CD900D19242DB700F97C12 /* 009_M */,
+				60AC1404195D4253009A38F8 /* 010_photoBrowser */,
 				60DCE3B11923218100CFD09D /* 100_common */,
 				608159B4191DCC36008A06CE /* SZFramework */,
 				608159D3191DCC36008A06CE /* SZFrameworkTests */,
@@ -383,6 +402,25 @@
 			name = 007_V;
 			sourceTree = "<group>";
 		};
+		60AC1404195D4253009A38F8 /* 010_photoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				60AC1408195D461F009A38F8 /* SZPhoto.h */,
+				60AC1409195D461F009A38F8 /* SZPhoto.m */,
+				60AC1405195D4270009A38F8 /* SZPhotoView.h */,
+				60AC1406195D4270009A38F8 /* SZPhotoView.m */,
+				60AC140B195D485B009A38F8 /* SZPhotoBrowser.h */,
+				60AC140C195D485B009A38F8 /* SZPhotoBrowser.m */,
+				60AC140E195D4BDB009A38F8 /* SZPhotoLoadingView.h */,
+				60AC140F195D4BDB009A38F8 /* SZPhotoLoadingView.m */,
+				60AC1411195D4E1D009A38F8 /* SZPhotoProgressView.h */,
+				60AC1412195D4E1D009A38F8 /* SZPhotoProgressView.m */,
+				60B8A79D195FA9BF00D3D1AF /* SZPhotoViewController.h */,
+				60B8A79E195FA9BF00D3D1AF /* SZPhotoViewController.m */,
+			);
+			name = 010_photoBrowser;
+			sourceTree = "<group>";
+		};
 		60C5D8E51921EE2800B8CDB5 /* 008_C */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,7 +594,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B8A79F195FA9BF00D3D1AF /* SZPhotoViewController.m in Sources */,
 				60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */,
+				60AC1413195D4E1D009A38F8 /* SZPhotoProgressView.m in Sources */,
 				608159F0191F60DA008A06CE /* NSString+MD5.m in Sources */,
 				60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */,
 				602E99F61951995100ADCDC3 /* SZButtonWithBadge.m in Sources */,
@@ -569,8 +609,10 @@
 				60031D5219481E0100AEAE84 /* SZClearPopWindow.m in Sources */,
 				60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */,
 				60815A03191F7577008A06CE /* UIImage+MD5.m in Sources */,
+				60AC140D195D485B009A38F8 /* SZPhotoBrowser.m in Sources */,
 				608159EA191F5F59008A06CE /* NSDictionary+JSON.m in Sources */,
 				608159BB191DCC36008A06CE /* main.m in Sources */,
+				60AC140A195D461F009A38F8 /* SZPhoto.m in Sources */,
 				608159E5191F59C5008A06CE /* NSArray+JSON.m in Sources */,
 				60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */,
 				605AC506192D995B002CC7D0 /* SZSegmentedControl.m in Sources */,
@@ -584,8 +626,10 @@
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
 				60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
+				60AC1407195D4270009A38F8 /* SZPhotoView.m in Sources */,
 				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
 				60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */,
+				60AC1410195D4BDB009A38F8 /* SZPhotoLoadingView.m in Sources */,
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
 				60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */,
 				60E5ED481946CA4000DA8C51 /* SZURLCache.m in Sources */,

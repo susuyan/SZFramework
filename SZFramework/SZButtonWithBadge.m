@@ -26,6 +26,7 @@
         self.button.showsTouchWhenHighlighted = YES;
         [self.button addTarget:self action:@selector(onButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
         self.button.frame = frame;
+        self.button.imageEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
         [self addSubview:self.button];
         
         self.badge = [SZCustomBadge customBadgeWithString:@"0"];
