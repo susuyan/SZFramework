@@ -6,8 +6,10 @@
 //  Copyright (c) 2014年 3MeoW. All rights reserved.
 //
 
-#import "SZPopWindow.h"
+#import <UIKit/UIKit.h>
 
-@interface SZClearPopWindow : SZPopWindow
-
+@interface SZClearPopWindow : UIWindow
++ (SZClearPopWindow *)sharedWindow;
+- (void)show;
+- (void)hide;
 @end
