@@ -11,4 +11,5 @@
 @interface NSString (MD5)
 - (NSString *)md5;
 - (NSString *)urlEncoding;
+- (NSInteger)chineseTextLength;
 @end

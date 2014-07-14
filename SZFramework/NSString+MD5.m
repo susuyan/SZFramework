@@ -28,4 +28,17 @@
     
     return encodedString;
 }
+- (NSInteger)chineseTextLength {
+    int strlength = 0;
+    char* p = (char*)[self cStringUsingEncoding:NSUnicodeStringEncoding];
+    for (int i=0 ; i < [self lengthOfBytesUsingEncoding:NSUnicodeStringEncoding] ;i++) {
+        if (*p) {
+            p++;
+            strlength++;
+        } else {
+            p++;
+        }
+    }
+    return (strlength + 1) / 2;
+}
 @end
