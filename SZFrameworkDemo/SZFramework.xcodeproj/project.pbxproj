@@ -37,6 +37,9 @@
 		60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A0B191F7D6E008A06CE /* UIView+Helper.m */; };
 		60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 60815A10191F7E8D008A06CE /* UIViewController+HUD.m */; };
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
+		60A628A119737A51009B6B9F /* SZStretchableTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A628A019737A51009B6B9F /* SZStretchableTableHeaderView.m */; };
+		60A628A419737FD9009B6B9F /* StretchalbeHeaderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A628A319737FD9009B6B9F /* StretchalbeHeaderTableViewController.m */; };
+		60A628A619738175009B6B9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A628A519738175009B6B9F /* MapKit.framework */; };
 		60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA8851192E03AB00D7B928 /* SZBannerView.m */; };
 		60AC1407195D4270009A38F8 /* SZPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC1406195D4270009A38F8 /* SZPhotoView.m */; };
 		60AC140A195D461F009A38F8 /* SZPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AC1409195D461F009A38F8 /* SZPhoto.m */; };
@@ -127,6 +130,11 @@
 		60815A0F191F7E8D008A06CE /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HUD.h"; path = "../SZFramework/UIViewController+HUD.h"; sourceTree = "<group>"; };
 		60815A10191F7E8D008A06CE /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HUD.m"; path = "../SZFramework/UIViewController+HUD.m"; sourceTree = "<group>"; };
 		60815A1619211321008A06CE /* SZFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SZFramework.podspec; path = ../SZFramework.podspec; sourceTree = "<group>"; };
+		60A6289F19737A51009B6B9F /* SZStretchableTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZStretchableTableHeaderView.h; path = ../SZFramework/SZStretchableTableHeaderView.h; sourceTree = "<group>"; };
+		60A628A019737A51009B6B9F /* SZStretchableTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZStretchableTableHeaderView.m; path = ../SZFramework/SZStretchableTableHeaderView.m; sourceTree = "<group>"; };
+		60A628A219737FD9009B6B9F /* StretchalbeHeaderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchalbeHeaderTableViewController.h; sourceTree = "<group>"; };
+		60A628A319737FD9009B6B9F /* StretchalbeHeaderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchalbeHeaderTableViewController.m; sourceTree = "<group>"; };
+		60A628A519738175009B6B9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		60AA8850192E03AB00D7B928 /* SZBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZBannerView.h; path = ../SZFramework/SZBannerView.h; sourceTree = "<group>"; };
 		60AA8851192E03AB00D7B928 /* SZBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZBannerView.m; path = ../SZFramework/SZBannerView.m; sourceTree = "<group>"; };
 		60AC1405195D4270009A38F8 /* SZPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPhotoView.h; path = ../SZFramework/SZPhotoView.h; sourceTree = "<group>"; };
@@ -185,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A628A619738175009B6B9F /* MapKit.framework in Frameworks */,
 				608159B1191DCC36008A06CE /* CoreGraphics.framework in Frameworks */,
 				608159B3191DCC36008A06CE /* UIKit.framework in Frameworks */,
 				60FAD9D3192256D1008046F9 /* Reveal.framework in Frameworks */,
@@ -248,6 +257,7 @@
 		608159AD191DCC36008A06CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60A628A519738175009B6B9F /* MapKit.framework */,
 				608159AE191DCC36008A06CE /* Foundation.framework */,
 				608159B0191DCC36008A06CE /* CoreGraphics.framework */,
 				608159B2191DCC36008A06CE /* UIKit.framework */,
@@ -269,6 +279,8 @@
 				608159B5191DCC36008A06CE /* Supporting Files */,
 				60CD901A1924499A00F97C12 /* TestViewController.h */,
 				60CD901B1924499A00F97C12 /* TestViewController.m */,
+				60A628A219737FD9009B6B9F /* StretchalbeHeaderTableViewController.h */,
+				60A628A319737FD9009B6B9F /* StretchalbeHeaderTableViewController.m */,
 			);
 			path = SZFramework;
 			sourceTree = "<group>";
@@ -398,6 +410,8 @@
 				602E99F51951995100ADCDC3 /* SZButtonWithBadge.m */,
 				602E99F71951999B00ADCDC3 /* SZCustomBadge.h */,
 				602E99F81951999B00ADCDC3 /* SZCustomBadge.m */,
+				60A6289F19737A51009B6B9F /* SZStretchableTableHeaderView.h */,
+				60A628A019737A51009B6B9F /* SZStretchableTableHeaderView.m */,
 			);
 			name = 007_V;
 			sourceTree = "<group>";
@@ -616,6 +630,7 @@
 				608159E5191F59C5008A06CE /* NSArray+JSON.m in Sources */,
 				60FAD9D91922578D008046F9 /* SZPopWindow.m in Sources */,
 				605AC506192D995B002CC7D0 /* SZSegmentedControl.m in Sources */,
+				60A628A119737A51009B6B9F /* SZStretchableTableHeaderView.m in Sources */,
 				60DCE3EE1923689D00CFD09D /* UIImageView+BlurImage.m in Sources */,
 				60CBA376192F3137004276A6 /* SZCircleView.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
@@ -627,6 +642,7 @@
 				60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
 				60AC1407195D4270009A38F8 /* SZPhotoView.m in Sources */,
+				60A628A419737FD9009B6B9F /* StretchalbeHeaderTableViewController.m in Sources */,
 				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
 				60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */,
 				60AC1410195D4BDB009A38F8 /* SZPhotoLoadingView.m in Sources */,

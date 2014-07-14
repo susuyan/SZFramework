@@ -36,4 +36,6 @@
 
 #define AFHTTPRequestOperationManeger(__url_string__) [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:__url_string__]]
 
+
+
 #endif
