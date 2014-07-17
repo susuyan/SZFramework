@@ -9,6 +9,8 @@
 #ifndef SZFramework_define_h
 #define SZFramework_define_h
 
+//TODO: test time transfer 
+
 // device
 #define ScreenSize ([UIScreen mainScreen].bounds.size)
 #define is_4inch (ScreenSize.height > 480)
