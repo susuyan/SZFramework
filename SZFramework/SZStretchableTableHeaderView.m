@@ -7,6 +7,7 @@
 //
 
 #import "SZStretchableTableHeaderView.h"
+#import "UIView+Helper.h"
 
 @interface SZStretchableTableHeaderView () {
     CGRect initialFrame;

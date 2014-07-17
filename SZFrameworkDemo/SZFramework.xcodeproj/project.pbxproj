@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50C520C4A2434B44BB264408 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4330BD9B7404D9C8733633C /* libPods.a */; };
 		60031D5219481E0100AEAE84 /* SZClearPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60031D5119481E0100AEAE84 /* SZClearPopWindow.m */; };
+		6009F0BB1974C10A00F65948 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6009F0BA1974C10A00F65948 /* PhotoTableViewController.m */; };
 		602E99F61951995100ADCDC3 /* SZButtonWithBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E99F51951995100ADCDC3 /* SZButtonWithBadge.m */; };
 		602E99F91951999B00ADCDC3 /* SZCustomBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 602E99F81951999B00ADCDC3 /* SZCustomBadge.m */; };
 		605AC506192D995B002CC7D0 /* SZSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 605AC505192D995B002CC7D0 /* SZSegmentedControl.m */; };
@@ -81,6 +82,8 @@
 /* Begin PBXFileReference section */
 		60031D5019481E0100AEAE84 /* SZClearPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZClearPopWindow.h; path = ../SZFramework/SZClearPopWindow.h; sourceTree = "<group>"; };
 		60031D5119481E0100AEAE84 /* SZClearPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZClearPopWindow.m; path = ../SZFramework/SZClearPopWindow.m; sourceTree = "<group>"; };
+		6009F0B91974C10A00F65948 /* PhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
+		6009F0BA1974C10A00F65948 /* PhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewController.m; sourceTree = "<group>"; };
 		602E99F41951995100ADCDC3 /* SZButtonWithBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZButtonWithBadge.h; path = ../SZFramework/SZButtonWithBadge.h; sourceTree = "<group>"; };
 		602E99F51951995100ADCDC3 /* SZButtonWithBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZButtonWithBadge.m; path = ../SZFramework/SZButtonWithBadge.m; sourceTree = "<group>"; };
 		602E99F71951999B00ADCDC3 /* SZCustomBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCustomBadge.h; path = ../SZFramework/SZCustomBadge.h; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 		608159B4191DCC36008A06CE /* SZFramework */ = {
 			isa = PBXGroup;
 			children = (
+				6009F0B91974C10A00F65948 /* PhotoTableViewController.h */,
+				6009F0BA1974C10A00F65948 /* PhotoTableViewController.m */,
 				608159BD191DCC36008A06CE /* SZAppDelegate.h */,
 				608159BE191DCC36008A06CE /* SZAppDelegate.m */,
 				608159C0191DCC36008A06CE /* Main.storyboard */,
@@ -638,6 +643,7 @@
 				60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */,
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
+				6009F0BB1974C10A00F65948 /* PhotoTableViewController.m in Sources */,
 				608159FB191F7458008A06CE /* UIAlertView+Block.m in Sources */,
 				60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
