@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "define.h"
 
 @interface SZClearPopWindow : UIWindow
+@property (copy, nonatomic) VoidBlock hideHandler;
 + (SZClearPopWindow *)sharedWindow;
 - (void)show;
 - (void)hide;

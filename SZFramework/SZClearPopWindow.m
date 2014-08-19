@@ -49,6 +49,9 @@
 }
 
 - (void)hide {
+    if (self.hideHandler) {
+        self.hideHandler(self);
+    }
     [UIView animateWithDuration:0.3 animations:^{
         self.alpha = 0;
     } completion:^(BOOL finished) {
@@ -56,6 +59,7 @@
             [v removeFromSuperview];
         }
         [self removeFromSuperview];
+        self.hideHandler = nil;
     }];
 }
 
