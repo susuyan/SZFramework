@@ -25,14 +25,14 @@ PODS:
   - FMDB/standard (2.3):
     - FMDB/common
   - JDStatusBarNotification (1.4.8)
-  - MBProgressHUD (0.8)
+  - MBProgressHUD (0.9)
   - MWPhotoBrowser (1.4.0):
     - DACircularProgress
     - MBProgressHUD (~> 0.8)
     - PSTCollectionView (~> 1.2)
     - SDWebImage (~> 3.5.4)
   - pop (1.0.5)
-  - PSTCollectionView (1.2.1)
+  - PSTCollectionView (1.2.3)
   - SDWebImage (3.5.4):
     - SDWebImage/Core
   - SDWebImage/Core (3.5.4)
@@ -52,10 +52,10 @@ SPEC CHECKSUMS:
   DACircularProgress: 3b41941891a56dc6aa17971f5322a9a38a6f446e
   FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
   JDStatusBarNotification: c68611370dedc0ef865fb0fc1768dfbaf8fd961f
-  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
   MWPhotoBrowser: 4efcdb9da34751f97992128a5356f3929d1af537
   pop: 75fa2b33934200a8a68abb449ac1726fcf7e43b9
-  PSTCollectionView: a63299550ad566b579479d07cb5e2bf61148686b
+  PSTCollectionView: d9f466e4554cc83260ca9bde7beb27f308e8fd76
   SDWebImage: 571295c8acbb699505a0f68e54506147c3de9ea7
   SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190
 

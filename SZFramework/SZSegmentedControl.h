@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define kSZSegmentedControlWidth 320
+#define kSZSegmentedControlButtonWidth 64
 #define kSZSegmentedControlHeight 36
 
 @class SZSegmentedControl;
@@ -17,7 +18,7 @@
 - (void)onSelectedIndex:(NSInteger)index segmentedControl:(SZSegmentedControl *)segmentedControl;
 @end
 
-@interface SZSegmentedControl : UIView
+@interface SZSegmentedControl : UIScrollView
 @property (assign, nonatomic) id<SZSegmentedControlDelegate> delegate;
 @property (assign, nonatomic) NSInteger selectedIndex;
 - (id)initWithFrame:(CGRect)frame items:(NSArray *)items tintColor:(UIColor *)color;

@@ -8,6 +8,7 @@
 
 #import "SZSegmentedControl.h"
 #import "define.h"
+#import "UIView+Helper.h"
 
 @interface SZSegmentedControl ()
 @property (strong, nonatomic) NSArray *items;
@@ -23,15 +24,20 @@
     if (self) {
         
         self.backgroundColor = [UIColor whiteColor];
+        
         self.items = items;
         self.tintColor = color;
         
         NSUInteger itemCount = items.count;
-        CGFloat itemWidth = kSZSegmentedControlWidth / itemCount;
+        
+        self.contentSize = CGSizeMake(itemCount * kSZSegmentedControlButtonWidth, frame.size.height);
+        self.showsVerticalScrollIndicator = self.showsHorizontalScrollIndicator = NO;
+        
+        //TODO: to be changed width
         
         self.buttonArray = [NSMutableArray array];
         for (int i = 0; i < itemCount; i++) {
-            CGRect frame = CGRectMake(itemWidth * i, 0, itemWidth, kSZSegmentedControlHeight);
+            CGRect frame = CGRectMake(kSZSegmentedControlButtonWidth * i, 0, kSZSegmentedControlButtonWidth, kSZSegmentedControlHeight);
             UIButton *button = [self getButtonWithTitle:self.items[i] frame:frame index:i];
             [self.buttonArray addObject:button];
             [self addSubview:button];
@@ -39,7 +45,7 @@
         
         self.selectedIndex = 0;
         [[self.buttonArray firstObject] setSelected:YES];
-        //self.selectedIndicator = [[UIView alloc] initWithFrame:CGRectMake(0, kSZSegmentedControlHeight - 4, itemWidth, 3)];
+
         CGRect frame = [[[self.buttonArray firstObject] titleLabel] frame];
         frame.origin.y = kSZSegmentedControlHeight - 4;
         frame.size.height = 3;
@@ -56,13 +62,9 @@
     button.frame = frame;
     button.titleLabel.font = [UIFont systemFontOfSize:15];
     button.titleLabel.adjustsFontSizeToFitWidth = YES;
-    //[button setTitleColor:self.tintColor forState:(UIControlStateNormal)];
     [button setTitleColor:RGB_HEX(0x1f1f1f) forState:(UIControlStateNormal)];
     [button addTarget:self action:@selector(onSegmentedButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
-    
-    //
     [button.titleLabel sizeToFit];
-    
     return button;
 }
 
@@ -75,6 +77,15 @@
     [[self.buttonArray objectAtIndex:self.selectedIndex] setSelected:NO];
     _selectedIndex = buttonIndex;
     [button setSelected:YES];
+    
+    UIButton *needShowButton = button;
+    if (button.x < self.contentOffset.x) {
+        needShowButton = [self.buttonArray objectAtIndex:MAX(0, _selectedIndex-2)];
+    } else if (button.x >= self.contentOffset.x+kSZSegmentedControlWidth) {
+        needShowButton = [self.buttonArray objectAtIndex:MIN(self.buttonArray.count-1, _selectedIndex+2)];
+    }
+    
+    [self scrollRectToVisible:needShowButton.frame animated:YES];
     
     [UIView animateWithDuration:0.2 animations:^{
         UIButton *button = [self.buttonArray objectAtIndex:buttonIndex];
