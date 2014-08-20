@@ -29,15 +29,18 @@
         self.tintColor = color;
         
         NSUInteger itemCount = items.count;
+        CGFloat buttonWidth = kSZSegmentedControlButtonWidth;
         
-        self.contentSize = CGSizeMake(itemCount * kSZSegmentedControlButtonWidth, frame.size.height);
+        if (itemCount > 5) {
+            self.contentSize = CGSizeMake(itemCount * kSZSegmentedControlButtonWidth, frame.size.height);
+        } else {
+            buttonWidth = kSZSegmentedControlWidth / itemCount;
+        }
         self.showsVerticalScrollIndicator = self.showsHorizontalScrollIndicator = NO;
-        
-        //TODO: to be changed width
         
         self.buttonArray = [NSMutableArray array];
         for (int i = 0; i < itemCount; i++) {
-            CGRect frame = CGRectMake(kSZSegmentedControlButtonWidth * i, 0, kSZSegmentedControlButtonWidth, kSZSegmentedControlHeight);
+            CGRect frame = CGRectMake(buttonWidth * i, 0, buttonWidth, kSZSegmentedControlHeight);
             UIButton *button = [self getButtonWithTitle:self.items[i] frame:frame index:i];
             [self.buttonArray addObject:button];
             [self addSubview:button];
