@@ -8,23 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-static CGFloat const kSZNotificationViewHeight = 50.0f;
+static CGFloat const kSZNotificationViewHeight = 30.0f;
 static CGFloat const kSZNotificationViewSymbolViewSidelength = 44.0f;
-static CGFloat const kSZNotificationViewDefaultShowDuration = 2.0;
+static NSTimeInterval const kSZNotificationViewDefaultShowDuration = 2.0;
 
-typedef NS_ENUM(NSInteger, SZNotificationViewStyle) {
-    SZNotificationViewStyleSuccess = 0,
+typedef enum {
+    SZNotificationViewStyleSuccess,
     SZNotificationViewStyleError,
-    SZNotificationViewStyleText,
-    SZNotificationViewStyleImage
-};
+} SZNotificationViewStyle;
 
-typedef NS_ENUM(NSInteger, SZNotificationViewPosition) {
-    SZNotificationViewPositionTop = 0,
-    SZNotificationViewPositionBottom
-};
-
-typedef void (^SZNotificationViewTapHandler)();
+typedef void(^CSVoidBlock)();
 
 @interface SZNotificationView : UIView
 
@@ -50,10 +43,10 @@ typedef void (^SZNotificationViewTapHandler)();
 
 #pragma mark + creators
 
-+ (SZNotificationView *)notificationViewWithParentViewController:(UIViewController*)viewController
-                                                       tintColor:(UIColor*)tintColor
-                                                           image:(UIImage*)image
-                                                         message:(NSString*)message;
++ (SZNotificationView*)notificationViewWithParentViewController:(UIViewController*)viewController
+                                                      tintColor:(UIColor*)tintColor
+                                                          image:(UIImage*)image
+                                                        message:(NSString*)message;
 
 #pragma mark - initialization
 
@@ -77,6 +70,6 @@ typedef void (^SZNotificationViewTapHandler)();
 
 @property (nonatomic, getter = isShowingActivity) BOOL showingActivity;
 
-@property (nonatomic, copy) SZNotificationViewTapHandler tapHandler;
+@property (nonatomic, copy) CSVoidBlock tapHandler;
 
 @end
