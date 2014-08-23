@@ -82,9 +82,9 @@
     [button setSelected:YES];
     
     UIButton *needShowButton = button;
-    if (button.x < self.contentOffset.x) {
+    if (button.x < (self.contentOffset.x+button.width)) {
         needShowButton = [self.buttonArray objectAtIndex:MAX(0, _selectedIndex-2)];
-    } else if (button.x >= self.contentOffset.x+kSZSegmentedControlWidth) {
+    } else if (button.x >= (self.contentOffset.x+kSZSegmentedControlWidth-button.width)) {
         needShowButton = [self.buttonArray objectAtIndex:MIN(self.buttonArray.count-1, _selectedIndex+2)];
     }
     
