@@ -17,7 +17,7 @@ typedef enum {
     SZNotificationViewStyleError,
 } SZNotificationViewStyle;
 
-typedef void(^CSVoidBlock)();
+typedef void(^SZVoidBlock)();
 
 @interface SZNotificationView : UIView
 
@@ -70,6 +70,6 @@ typedef void(^CSVoidBlock)();
 
 @property (nonatomic, getter = isShowingActivity) BOOL showingActivity;
 
-@property (nonatomic, copy) CSVoidBlock tapHandler;
+@property (nonatomic, copy) SZVoidBlock tapHandler;
 
 @end

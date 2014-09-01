@@ -52,6 +52,7 @@
 		60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06A81936FA25005A897A /* SZPresentingAnimator.m */; };
 		60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AB1936FB21005A897A /* UIColor+CustomColors.m */; };
 		60BE06AF19370136005A897A /* SZDismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AE19370136005A897A /* SZDismissingAnimator.m */; };
+		60BF459919AACEF1002935C1 /* Item4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF459819AACEF1002935C1 /* Item4ViewController.m */; };
 		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
 		60CBA376192F3137004276A6 /* SZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CBA375192F3137004276A6 /* SZCircleView.m */; };
 		60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD900F19242DD600F97C12 /* SZImageHelper.m */; };
@@ -159,6 +160,8 @@
 		60BE06AB1936FB21005A897A /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CustomColors.m"; path = "../SZFramework/UIColor+CustomColors.m"; sourceTree = "<group>"; };
 		60BE06AD19370136005A897A /* SZDismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZDismissingAnimator.h; path = ../SZFramework/SZDismissingAnimator.h; sourceTree = "<group>"; };
 		60BE06AE19370136005A897A /* SZDismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZDismissingAnimator.m; path = ../SZFramework/SZDismissingAnimator.m; sourceTree = "<group>"; };
+		60BF459719AACEF1002935C1 /* Item4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item4ViewController.h; sourceTree = "<group>"; };
+		60BF459819AACEF1002935C1 /* Item4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item4ViewController.m; sourceTree = "<group>"; };
 		60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZOpenURLManager.h; path = ../SZFramework/SZOpenURLManager.h; sourceTree = "<group>"; };
 		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
 		60CBA374192F3137004276A6 /* SZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCircleView.h; path = ../SZFramework/SZCircleView.h; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 				60CD901B1924499A00F97C12 /* TestViewController.m */,
 				60A628A219737FD9009B6B9F /* StretchalbeHeaderTableViewController.h */,
 				60A628A319737FD9009B6B9F /* StretchalbeHeaderTableViewController.m */,
+				60BF459719AACEF1002935C1 /* Item4ViewController.h */,
+				60BF459819AACEF1002935C1 /* Item4ViewController.m */,
 			);
 			path = SZFramework;
 			sourceTree = "<group>";
@@ -655,6 +660,7 @@
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
 				60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */,
 				60E5ED481946CA4000DA8C51 /* SZURLCache.m in Sources */,
+				60BF459919AACEF1002935C1 /* Item4ViewController.m in Sources */,
 				608159F8191F7406008A06CE /* UIActionSheet+Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,6 @@
 
 #import "SZNotificationView.h"
 
-#import "SZNotificationView.h"
-
 static NSInteger const kSZNotificationViewEmptySymbolViewTag = 666;
 
 static NSString* const kSZNotificationViewUINavigationControllerWillShowViewControllerNotification = @"UINavigationControllerWillShowViewControllerNotification";

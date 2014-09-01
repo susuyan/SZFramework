@@ -17,9 +17,9 @@
     if (cachedDictionary) {
         [cachedDictionary setObject:data forKey:key];
         if ([cachedDictionary writeToFile:CachePath atomically:YES]) {
-            NSLog(@"cache succeed");
+
         } else {
-            NSLog(@"cache failed");
+
         }
     } else {
         [@{key: data} writeToFile:CachePath atomically:YES];

@@ -10,5 +10,5 @@
 #import "SZFramework.h"
 
 @interface SZViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end

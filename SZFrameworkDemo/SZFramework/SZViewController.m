@@ -10,7 +10,7 @@
 #import <JDStatusBarNotification/JDStatusBarNotification.h>
 
 @interface SZViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *blueButton;
 @end
 
 @implementation SZViewController
@@ -24,6 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self testHalfFont];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,5 +43,17 @@
 
     [JDStatusBarNotification showWithStatus:@"status" styleName:@"name"];
     [JDStatusBarNotification dismissAfter:1];
+}
+- (IBAction)button:(id)sender {
+    self.blueButton.enabled = NO;
+    [self performSelector:@selector(enableBlueButton) withObject:nil afterDelay:1];
+}
+- (void)enableBlueButton {
+    self.blueButton.enabled = YES;
+}
+- (void)testHalfFont {
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"IIIIIIIIII"];
+    [attributedString setAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:17.5]} range:NSMakeRange(5, 5)];
+    self.label.attributedText = attributedString;
 }
 @end
