@@ -97,8 +97,8 @@
         
         self.selectedIndicator.frame = frame;
     } completion:^(BOOL finished) {
-        if ([self.delegate respondsToSelector:@selector(onSelectedIndex:segmentedControl:)]) {
-            [self.delegate onSelectedIndex:buttonIndex segmentedControl:self];
+        if ([self.segmentedControlDelegate respondsToSelector:@selector(onSelectedIndex:segmentedControl:)]) {
+            [self.segmentedControlDelegate onSelectedIndex:buttonIndex segmentedControl:self];
         }
     }];
 }

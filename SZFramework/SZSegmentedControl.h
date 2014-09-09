@@ -19,7 +19,7 @@
 @end
 
 @interface SZSegmentedControl : UIScrollView
-@property (assign, nonatomic) id<SZSegmentedControlDelegate> delegate;
+@property (assign, nonatomic) id<SZSegmentedControlDelegate> segmentedControlDelegate;
 @property (assign, nonatomic) NSInteger selectedIndex;
 - (id)initWithFrame:(CGRect)frame items:(NSArray *)items tintColor:(UIColor *)color;
 - (void)setSelectedIndex:(NSInteger)index;
