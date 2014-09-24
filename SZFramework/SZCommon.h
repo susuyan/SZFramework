@@ -17,6 +17,7 @@ typedef NS_ENUM (NSInteger, GlobalHUDStyle){
 };
 
 @interface SZCommon : NSObject
+
 + (NSString *)getParamValueFromUrl:(NSString*)url paramName:(NSString *)paramName;
 
 + (UIImageView *)getImageViewWithFrame:(CGRect)frame backgroundColor:(UIColor *)color;
