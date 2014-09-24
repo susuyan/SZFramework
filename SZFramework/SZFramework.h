@@ -29,10 +29,10 @@
 #import "UIDevice+DeviceType.h"
 
 // 004_M_category
+#import "UIColor+CustomColors.h"
 #import "UIImage+Helper.h"
 #import "UIImage+ImageEffects.h"
 #import "NSDate+Helper.h"
-#import "UIColor+CustomColors.h"
 
 // 005
 #import "UIView+Helper.h"
@@ -49,6 +49,7 @@
 #import "SZBannerView.h"
 #import "SZCircleView.h"
 #import "SZButtonWithBadge.h"
+#import "SZCustomBadge.h"
 #import "SZStretchableTableHeaderView.h"
 
 // 008_C
