@@ -223,6 +223,7 @@
 				60815A12191F7FB2008A06CE /* 007_V */,
 				60C5D8E51921EE2800B8CDB5 /* 008_C */,
 				60CD900D19242DB700F97C12 /* 009_M */,
+				60BFB9CF19D28EDF00B58AD6 /* 010_Social */,
 				60DCE3B11923218100CFD09D /* 100_common */,
 				608159B4191DCC36008A06CE /* SZFramework */,
 				608159D3191DCC36008A06CE /* SZFrameworkTests */,
@@ -405,6 +406,13 @@
 				60A628A019737A51009B6B9F /* SZStretchableTableHeaderView.m */,
 			);
 			name = 007_V;
+			sourceTree = "<group>";
+		};
+		60BFB9CF19D28EDF00B58AD6 /* 010_Social */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 010_Social;
 			sourceTree = "<group>";
 		};
 		60C5D8E51921EE2800B8CDB5 /* 008_C */ = {

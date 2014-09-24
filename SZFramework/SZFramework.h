@@ -63,14 +63,6 @@
 #import "SZDismissingAnimator.h"
 #import "SZURLCache.h"
 
-// 010_photoBrowser
-#import "SZPhoto.h"
-#import "SZPhotoView.h"
-#import "SZPhotoBrowser.h"
-#import "SZPhotoLoadingView.h"
-#import "SZPhotoProgressView.h"
-#import "SZPhotoViewController.h"
-
 // 100
 #import "SZCommon.h"
 

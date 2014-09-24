@@ -19,9 +19,8 @@ Pod::Spec.new do |s|
     
     s.dependency 'MBProgressHUD', '~> 0.8'
     s.dependency 'AFNetworking', '~> 2.2.3'
-    s.dependency 'SDWebImage', '~> 3.5.4'
     s.dependency 'MWPhotoBrowser', '~> 1.4.0'
     s.dependency 'SVPullToRefresh'
     s.dependency 'pop'
-#s.dependency 'Haneke', '~> 0.1'
+    s.dependency 'UMengAnalytics', '~> 3.1.2'
 end
