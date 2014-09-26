@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.resource = 'SZFramework/SZFramework.bundle'
     
     s.dependency 'MBProgressHUD', '~> 0.8'
-    s.dependency 'AFNetworking', '~> 2.2.3'
+    s.dependency 'AFNetworking', '~> 2.3.1'
     s.dependency 'MWPhotoBrowser', '~> 1.4.0'
     s.dependency 'SVPullToRefresh'
     s.dependency 'pop'
