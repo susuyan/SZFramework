@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define kSZSegmentedControlWidth [UIScreen mainScreen].bounds.size.width
-#define kSZSegmentedControlButtonWidth 64
+#define kSZSegmentedControlButtonWidth 75
 #define kSZSegmentedControlHeight 36
 
 @class SZSegmentedControl;

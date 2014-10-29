@@ -31,7 +31,7 @@
         NSUInteger itemCount = items.count;
         CGFloat buttonWidth = kSZSegmentedControlButtonWidth;
         
-        if (itemCount > 5) {
+        if ((kSZSegmentedControlWidth * itemCount) > kSZSegmentedControlWidth) {
             self.contentSize = CGSizeMake(itemCount * kSZSegmentedControlButtonWidth, frame.size.height);
         } else {
             buttonWidth = kSZSegmentedControlWidth / itemCount;
