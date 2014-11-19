@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
     s.source_files = 'SZFramework/*.{h,m}'
     s.resource = 'SZFramework/SZFramework.bundle'
     
-    s.dependency 'MBProgressHUD', '~> 0.8'
-    s.dependency 'AFNetworking', '~> 2.3.1'
-    s.dependency 'MWPhotoBrowser', '~> 1.4.0'
+    s.dependency 'MBProgressHUD'
+    s.dependency 'AFNetworking'
+    s.dependency 'MWPhotoBrowser'
     s.dependency 'SVPullToRefresh'
     s.dependency 'pop'
-    s.dependency 'UMengAnalytics', '~> 3.1.2'
+    s.dependency 'UMengAnalytics'
 end
