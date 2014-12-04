@@ -14,6 +14,7 @@
 @property (strong, nonatomic) NSArray *items;
 @property (strong, nonatomic) NSMutableArray *buttonArray;
 @property (strong, nonatomic) UIColor *tintColor;
+#define SZSegmentedControlSelectedIndecatorWidthAdjustment 2
 @property (strong, nonatomic) UIView *selectedIndicator;
 @end
 
@@ -29,21 +30,36 @@
         self.tintColor = color;
         
         NSUInteger itemCount = items.count;
-        CGFloat buttonWidth = kSZSegmentedControlButtonWidth;
         
-        if ((kSZSegmentedControlButtonWidth * itemCount) > kSZSegmentedControlWidth) {
-            self.contentSize = CGSizeMake(itemCount * kSZSegmentedControlButtonWidth, frame.size.height);
-        } else {
-            buttonWidth = kSZSegmentedControlWidth / itemCount;
+#define SZSegmentedControlPadding 14
+        CGFloat contentWidth = 0.0;
+        NSMutableArray *segmentWidthArray = [NSMutableArray array];
+        for (int i = 0; i < itemCount; i++) {
+            NSString *segmentTitle = [items objectAtIndex:i];
+            CGRect rect = [segmentTitle boundingRectWithSize:CGSizeMake(10000, 1000) options:(NSStringDrawingUsesLineFragmentOrigin) attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15]} context:nil];
+            contentWidth += rect.size.width + SZSegmentedControlPadding * 2;
+            [segmentWidthArray addObject:@(rect.size.width + SZSegmentedControlPadding * 2)];
         }
+        
+        CGFloat segmentWidthAdjustment = 0.0;
+        if (contentWidth > self.width) {
+            self.contentSize = CGSizeMake(contentWidth, self.height);
+        } else {
+            self.contentSize = self.frame.size;
+            segmentWidthAdjustment = (self.width - contentWidth) / itemCount;
+        }
+        
         self.showsVerticalScrollIndicator = self.showsHorizontalScrollIndicator = NO;
         
         self.buttonArray = [NSMutableArray array];
+        
+        CGFloat xOffset = 0.0;
         for (int i = 0; i < itemCount; i++) {
-            CGRect frame = CGRectMake(buttonWidth * i, 0, buttonWidth, kSZSegmentedControlHeight);
+            CGRect frame = CGRectMake(xOffset, 0, [segmentWidthArray[i] doubleValue] + segmentWidthAdjustment, self.height);
             UIButton *button = [self getButtonWithTitle:self.items[i] frame:frame index:i];
             [self.buttonArray addObject:button];
             [self addSubview:button];
+            xOffset += frame.size.width;
         }
         
         self.selectedIndex = 0;
@@ -52,6 +68,7 @@
         CGRect frame = [[[self.buttonArray firstObject] titleLabel] frame];
         frame.origin.y = kSZSegmentedControlHeight - 4;
         frame.size.height = 3;
+        frame.size.width += SZSegmentedControlSelectedIndecatorWidthAdjustment;
         self.selectedIndicator = [[UIView alloc] initWithFrame:frame];
         self.selectedIndicator.backgroundColor = self.tintColor;
         [self addSubview:self.selectedIndicator];
@@ -68,6 +85,7 @@
     [button setTitleColor:RGB_HEX(0x1f1f1f) forState:(UIControlStateNormal)];
     [button addTarget:self action:@selector(onSegmentedButtonPressed:) forControlEvents:(UIControlEventTouchUpInside)];
     [button.titleLabel sizeToFit];
+    button.titleLabel.center = CGPointMake(button.width/2, button.height/2);
     return button;
 }
 
@@ -93,7 +111,10 @@
     [UIView animateWithDuration:0.2 animations:^{
         UIButton *button = [self.buttonArray objectAtIndex:buttonIndex];
         UILabel *label = [[self.buttonArray objectAtIndex:buttonIndex] titleLabel];
-        CGRect frame = CGRectMake(button.frame.origin.x + label.frame.origin.x, kSZSegmentedControlHeight - 4, label.frame.size.width, 3);
+        CGRect frame = CGRectMake(button.frame.origin.x + label.frame.origin.x,
+                                  kSZSegmentedControlHeight - 4,
+                                  label.frame.size.width + SZSegmentedControlSelectedIndecatorWidthAdjustment,
+                                  3);
         
         self.selectedIndicator.frame = frame;
     } completion:^(BOOL finished) {
