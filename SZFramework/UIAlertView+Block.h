@@ -10,6 +10,8 @@
 
 @interface UIAlertView (Block) <UIAlertViewDelegate>
 
++ (void)showMessage:(NSString *)message;
+
 - (id)initWithTitle:(NSString *)title message:(NSString *)message completionBlock:(void (^)(NSUInteger buttonIndex))block cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...;
 
 @end
