@@ -43,13 +43,11 @@
 		60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AB1936FB21005A897A /* UIColor+CustomColors.m */; };
 		60BE06AF19370136005A897A /* SZDismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AE19370136005A897A /* SZDismissingAnimator.m */; };
 		60BF459919AACEF1002935C1 /* Item4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF459819AACEF1002935C1 /* Item4ViewController.m */; };
-		60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */; };
 		60CBA376192F3137004276A6 /* SZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CBA375192F3137004276A6 /* SZCircleView.m */; };
 		60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD900F19242DD600F97C12 /* SZImageHelper.m */; };
 		60CD90191924432600F97C12 /* SZPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD90181924432600F97C12 /* SZPlaceholderTextView.m */; };
 		60CD901C1924499A00F97C12 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD901B1924499A00F97C12 /* TestViewController.m */; };
 		60DC944F194992EE0049A1EB /* collection in Resources */ = {isa = PBXBuildFile; fileRef = 60DC944E194992EE0049A1EB /* collection */; };
-		60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */; };
 		60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3B3192321A300CFD09D /* SZCommon.m */; };
 		60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3BB1923348100CFD09D /* NSDate+Helper.m */; };
 		60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DCE3EA1923684400CFD09D /* UIImage+ImageEffects.m */; };
@@ -132,8 +130,6 @@
 		60BE06AE19370136005A897A /* SZDismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZDismissingAnimator.m; path = ../SZFramework/SZDismissingAnimator.m; sourceTree = "<group>"; };
 		60BF459719AACEF1002935C1 /* Item4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item4ViewController.h; sourceTree = "<group>"; };
 		60BF459819AACEF1002935C1 /* Item4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item4ViewController.m; sourceTree = "<group>"; };
-		60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZOpenURLManager.h; path = ../SZFramework/SZOpenURLManager.h; sourceTree = "<group>"; };
-		60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZOpenURLManager.m; path = ../SZFramework/SZOpenURLManager.m; sourceTree = "<group>"; };
 		60CBA374192F3137004276A6 /* SZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCircleView.h; path = ../SZFramework/SZCircleView.h; sourceTree = "<group>"; };
 		60CBA375192F3137004276A6 /* SZCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZCircleView.m; path = ../SZFramework/SZCircleView.m; sourceTree = "<group>"; };
 		60CD900E19242DD600F97C12 /* SZImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZImageHelper.h; path = ../SZFramework/SZImageHelper.h; sourceTree = "<group>"; };
@@ -143,8 +139,6 @@
 		60CD901A1924499A00F97C12 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		60CD901B1924499A00F97C12 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		60DC944E194992EE0049A1EB /* collection */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = collection; path = ../SZFramework/collection; sourceTree = "<group>"; };
-		60DCE3AE19231A4900CFD09D /* SZAuthorizeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZAuthorizeC.h; path = ../SZFramework/SZAuthorizeC.h; sourceTree = "<group>"; };
-		60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZAuthorizeC.m; path = ../SZFramework/SZAuthorizeC.m; sourceTree = "<group>"; };
 		60DCE3B2192321A300CFD09D /* SZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCommon.h; path = ../SZFramework/SZCommon.h; sourceTree = "<group>"; };
 		60DCE3B3192321A300CFD09D /* SZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZCommon.m; path = ../SZFramework/SZCommon.m; sourceTree = "<group>"; };
 		60DCE3BA1923348100CFD09D /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Helper.h"; path = "../SZFramework/NSDate+Helper.h"; sourceTree = "<group>"; };
@@ -400,10 +394,6 @@
 			children = (
 				605AC504192D995B002CC7D0 /* SZSegmentedControl.h */,
 				605AC505192D995B002CC7D0 /* SZSegmentedControl.m */,
-				60C5D8E91921EF7800B8CDB5 /* SZOpenURLManager.h */,
-				60C5D8EA1921EF7800B8CDB5 /* SZOpenURLManager.m */,
-				60DCE3AE19231A4900CFD09D /* SZAuthorizeC.h */,
-				60DCE3AF19231A4900CFD09D /* SZAuthorizeC.m */,
 			);
 			name = 008_C;
 			sourceTree = "<group>";
@@ -568,7 +558,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DCE3B019231A4900CFD09D /* SZAuthorizeC.m in Sources */,
 				608159F0191F60DA008A06CE /* NSString+MD5.m in Sources */,
 				60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */,
 				60CD90191924432600F97C12 /* SZPlaceholderTextView.m in Sources */,
@@ -588,7 +577,6 @@
 				60CBA376192F3137004276A6 /* SZCircleView.m in Sources */,
 				60815A09191F7D5F008A06CE /* UIImage+Helper.m in Sources */,
 				60CD901C1924499A00F97C12 /* TestViewController.m in Sources */,
-				60C5D8EB1921EF7800B8CDB5 /* SZOpenURLManager.m in Sources */,
 				608159FF191F74C1008A06CE /* UIDevice+DeviceType.m in Sources */,
 				60815A11191F7E8D008A06CE /* UIViewController+HUD.m in Sources */,
 				6009F0BB1974C10A00F65948 /* PhotoTableViewController.m in Sources */,
