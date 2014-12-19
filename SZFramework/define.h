@@ -9,8 +9,6 @@
 #ifndef SZFramework_define_h
 #define SZFramework_define_h
 
-//TODO: test time transfer 
-
 // device
 #define ScreenSize ([UIScreen mainScreen].bounds.size)
 #define is_4inch (ScreenSize.height > 480)
@@ -24,8 +22,6 @@
                                           green:(((hexColor >> 8) & 0xFF))/255.0f          \
                                            blue:((hexColor & 0xFF))/255.0f                 \
                                           alpha:1]
-#define group_tableview_bg_color RGB_HEX(0xefeff4)
-#define tableview_separator_color RGB_HEX(0xc8c8c8)
 
 // shortcut
 #define App                     [UIApplication sharedApplication]
@@ -36,8 +32,6 @@
 #define StoryBoard(_name_) [UIStoryboard storyboardWithName:_name_ bundle:nil]
 
 #define WeakSelf __weak typeof(self) weakSelf = self;
-
-#define AFHTTPRequestOperationManeger(__url_string__) [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:__url_string__]]
 
 typedef void(^VoidBlock)(id obj);
 
