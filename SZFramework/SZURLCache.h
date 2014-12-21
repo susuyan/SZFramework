@@ -11,6 +11,7 @@
 @interface SZURLCache : NSObject
 + (void)cacheData:(NSData *)data forRequest:(NSURLRequest *)request;
 + (NSData *)getCachedDataForRequest:(NSURLRequest *)request;
++ (NSData *)getCachedDataForRequestURL:(NSString *)url;
 
 + (void)cacheDate:(NSDate *)date forRequest:(NSURLRequest *)request;
 + (NSDate *)getCachedDateForRequest:(NSURLRequest *)request;

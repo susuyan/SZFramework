@@ -37,6 +37,10 @@
     return nil;
 }
 
++ (NSData *)getCachedDataForRequestURL:(NSString *)url {
+    return [SZURLCache getCachedDataForRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+}
+
 #define CacheDateUserInfoKey @"CacheDateUserInfoKey"
 + (void)cacheDate:(NSDate *)date forRequest:(NSURLRequest *)request {
     NSString *key = [[request.URL absoluteString] md5];
