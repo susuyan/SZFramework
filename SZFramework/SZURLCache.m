@@ -10,36 +10,6 @@
 #import "NSString+MD5.h"
 
 @implementation SZURLCache
-#define CachePath ([NSString stringWithFormat:@"%@/Documents/cache.db", NSHomeDirectory()])
-+ (void)cacheData:(NSData *)data forRequest:(NSURLRequest *)request {
-    NSString *key = [[request.URL absoluteString] md5];
-    NSMutableDictionary *cachedDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:CachePath];
-    if (cachedDictionary) {
-        [cachedDictionary setObject:data forKey:key];
-        if ([cachedDictionary writeToFile:CachePath atomically:YES]) {
-
-        } else {
-
-        }
-    } else {
-        [@{key: data} writeToFile:CachePath atomically:YES];
-    }
-}
-
-+ (NSData *)getCachedDataForRequest:(NSURLRequest *)request {
-    NSData *data = nil;
-    NSString *key = [[request.URL absoluteString] md5];
-    NSDictionary *cachedDictionary = [NSDictionary dictionaryWithContentsOfFile:CachePath];
-    data = [cachedDictionary objectForKey:key];
-    if (data) {
-        return data;
-    }
-    return nil;
-}
-
-+ (NSData *)getCachedDataForRequestURL:(NSString *)url {
-    return [SZURLCache getCachedDataForRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
-}
 
 #define CacheDateUserInfoKey @"CacheDateUserInfoKey"
 + (void)cacheDate:(NSDate *)date forRequest:(NSURLRequest *)request {
@@ -51,6 +21,7 @@
     } else {
         [[NSUserDefaults standardUserDefaults] setObject:[NSMutableDictionary dictionaryWithObject:date forKey:key] forKey:CacheDateUserInfoKey];
     }
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 + (NSDate *)getCachedDateForRequest:(NSURLRequest *)request {
     NSString *key = [[request.URL absoluteString] md5];
