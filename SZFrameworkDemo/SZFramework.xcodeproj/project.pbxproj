@@ -37,9 +37,7 @@
 		60815A1719211321008A06CE /* SZFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 60815A1619211321008A06CE /* SZFramework.podspec */; };
 		60A628A619738175009B6B9F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A628A519738175009B6B9F /* MapKit.framework */; };
 		60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AA8851192E03AB00D7B928 /* SZBannerView.m */; };
-		60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06A81936FA25005A897A /* SZPresentingAnimator.m */; };
 		60BE06AC1936FB21005A897A /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AB1936FB21005A897A /* UIColor+CustomColors.m */; };
-		60BE06AF19370136005A897A /* SZDismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BE06AE19370136005A897A /* SZDismissingAnimator.m */; };
 		60BF459919AACEF1002935C1 /* Item4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF459819AACEF1002935C1 /* Item4ViewController.m */; };
 		60CBA376192F3137004276A6 /* SZCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CBA375192F3137004276A6 /* SZCircleView.m */; };
 		60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CD900F19242DD600F97C12 /* SZImageHelper.m */; };
@@ -66,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18CC6CF6CCE91FF24362F405 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4533AE93270B2C8576E485A8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		60031D5019481E0100AEAE84 /* SZClearPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZClearPopWindow.h; path = ../SZFramework/SZClearPopWindow.h; sourceTree = "<group>"; };
 		60031D5119481E0100AEAE84 /* SZClearPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZClearPopWindow.m; path = ../SZFramework/SZClearPopWindow.m; sourceTree = "<group>"; };
 		6009F0B91974C10A00F65948 /* PhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
@@ -116,12 +116,8 @@
 		60A628A519738175009B6B9F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		60AA8850192E03AB00D7B928 /* SZBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZBannerView.h; path = ../SZFramework/SZBannerView.h; sourceTree = "<group>"; };
 		60AA8851192E03AB00D7B928 /* SZBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZBannerView.m; path = ../SZFramework/SZBannerView.m; sourceTree = "<group>"; };
-		60BE06A71936FA25005A897A /* SZPresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZPresentingAnimator.h; path = ../SZFramework/SZPresentingAnimator.h; sourceTree = "<group>"; };
-		60BE06A81936FA25005A897A /* SZPresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPresentingAnimator.m; path = ../SZFramework/SZPresentingAnimator.m; sourceTree = "<group>"; };
 		60BE06AA1936FB21005A897A /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+CustomColors.h"; path = "../SZFramework/UIColor+CustomColors.h"; sourceTree = "<group>"; };
 		60BE06AB1936FB21005A897A /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CustomColors.m"; path = "../SZFramework/UIColor+CustomColors.m"; sourceTree = "<group>"; };
-		60BE06AD19370136005A897A /* SZDismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZDismissingAnimator.h; path = ../SZFramework/SZDismissingAnimator.h; sourceTree = "<group>"; };
-		60BE06AE19370136005A897A /* SZDismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZDismissingAnimator.m; path = ../SZFramework/SZDismissingAnimator.m; sourceTree = "<group>"; };
 		60BF459719AACEF1002935C1 /* Item4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item4ViewController.h; sourceTree = "<group>"; };
 		60BF459819AACEF1002935C1 /* Item4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item4ViewController.m; sourceTree = "<group>"; };
 		60CBA374192F3137004276A6 /* SZCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZCircleView.h; path = ../SZFramework/SZCircleView.h; sourceTree = "<group>"; };
@@ -147,7 +143,6 @@
 		60FAD9D81922578D008046F9 /* SZPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZPopWindow.m; path = ../SZFramework/SZPopWindow.m; sourceTree = "<group>"; };
 		60FAD9DA19225EFD008046F9 /* SZNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNotificationView.h; path = ../SZFramework/SZNotificationView.h; sourceTree = "<group>"; };
 		60FAD9DB19225EFD008046F9 /* SZNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNotificationView.m; path = ../SZFramework/SZNotificationView.m; sourceTree = "<group>"; };
-		AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C4330BD9B7404D9C8733633C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3137930D887488A3907E2650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4533AE93270B2C8576E485A8 /* Pods.debug.xcconfig */,
+				18CC6CF6CCE91FF24362F405 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		608159A2191DCC36008A06CE = {
 			isa = PBXGroup;
 			children = (
@@ -196,13 +200,12 @@
 				60815A12191F7FB2008A06CE /* 007_V */,
 				60C5D8E51921EE2800B8CDB5 /* 008_C */,
 				60CD900D19242DB700F97C12 /* 009_M */,
-				60BFB9CF19D28EDF00B58AD6 /* 010_Social */,
 				60DCE3B11923218100CFD09D /* 100_common */,
 				608159B4191DCC36008A06CE /* SZFramework */,
 				608159D3191DCC36008A06CE /* SZFrameworkTests */,
 				608159AD191DCC36008A06CE /* Frameworks */,
 				608159AC191DCC36008A06CE /* Products */,
-				AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */,
+				3137930D887488A3907E2650 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -371,13 +374,6 @@
 			name = 007_V;
 			sourceTree = "<group>";
 		};
-		60BFB9CF19D28EDF00B58AD6 /* 010_Social */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = 010_Social;
-			sourceTree = "<group>";
-		};
 		60C5D8E51921EE2800B8CDB5 /* 008_C */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,10 +386,6 @@
 		60CD900D19242DB700F97C12 /* 009_M */ = {
 			isa = PBXGroup;
 			children = (
-				60BE06A71936FA25005A897A /* SZPresentingAnimator.h */,
-				60BE06A81936FA25005A897A /* SZPresentingAnimator.m */,
-				60BE06AD19370136005A897A /* SZDismissingAnimator.h */,
-				60BE06AE19370136005A897A /* SZDismissingAnimator.m */,
 				60CD900E19242DD600F97C12 /* SZImageHelper.h */,
 				60CD900F19242DD600F97C12 /* SZImageHelper.m */,
 				60E5ED461946CA4000DA8C51 /* SZURLCache.h */,
@@ -535,7 +527,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -551,7 +543,6 @@
 				60DCE3EB1923684400CFD09D /* UIImage+ImageEffects.m in Sources */,
 				608159C5191DCC36008A06CE /* SZViewController.m in Sources */,
 				60FAD9DC19225EFD008046F9 /* SZNotificationView.m in Sources */,
-				60BE06AF19370136005A897A /* SZDismissingAnimator.m in Sources */,
 				60031D5219481E0100AEAE84 /* SZClearPopWindow.m in Sources */,
 				60815A0C191F7D6E008A06CE /* UIView+Helper.m in Sources */,
 				60815A03191F7577008A06CE /* UIImage+MD5.m in Sources */,
@@ -570,7 +561,6 @@
 				60AA8852192E03AB00D7B928 /* SZBannerView.m in Sources */,
 				608159BF191DCC36008A06CE /* SZAppDelegate.m in Sources */,
 				60DCE3BC1923348100CFD09D /* NSDate+Helper.m in Sources */,
-				60BE06A91936FA25005A897A /* SZPresentingAnimator.m in Sources */,
 				60DCE3B4192321A300CFD09D /* SZCommon.m in Sources */,
 				60CD901019242DD600F97C12 /* SZImageHelper.m in Sources */,
 				60E5ED481946CA4000DA8C51 /* SZURLCache.m in Sources */,
@@ -697,7 +687,7 @@
 		};
 		608159DE191DCC36008A06CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */;
+			baseConfigurationReference = 4533AE93270B2C8576E485A8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -707,20 +697,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/AFNetworking\"",
-					"\"${PODS_ROOT}/Headers/DACircularProgress\"",
-					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
-					"\"${PODS_ROOT}/Headers/MWPhotoBrowser\"",
-					"\"${PODS_ROOT}/Headers/PSTCollectionView\"",
-					"\"${PODS_ROOT}/Headers/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/SVPullToRefresh\"",
-					"\"${PODS_ROOT}/Headers/pop\"",
-				);
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -752,7 +730,7 @@
 		};
 		608159DF191DCC36008A06CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC794BAE0BE0461FA31579C8 /* Pods.xcconfig */;
+			baseConfigurationReference = 18CC6CF6CCE91FF24362F405 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -762,20 +740,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZFramework/SZFramework-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"\"${PODS_ROOT}/Headers/AFNetworking\"",
-					"\"${PODS_ROOT}/Headers/DACircularProgress\"",
-					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
-					"\"${PODS_ROOT}/Headers/MWPhotoBrowser\"",
-					"\"${PODS_ROOT}/Headers/PSTCollectionView\"",
-					"\"${PODS_ROOT}/Headers/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/SVPullToRefresh\"",
-					"\"${PODS_ROOT}/Headers/pop\"",
-				);
 				INFOPLIST_FILE = "SZFramework/SZFramework-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-isystem",

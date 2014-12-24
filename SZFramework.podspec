@@ -21,6 +21,5 @@ Pod::Spec.new do |s|
     s.dependency 'AFNetworking'
     s.dependency 'MWPhotoBrowser'
     s.dependency 'SVPullToRefresh'
-    s.dependency 'pop'
     s.dependency 'UMengAnalytics'
 end

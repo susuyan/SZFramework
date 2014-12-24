@@ -4,7 +4,6 @@ platform :ios, '7.0'
 pod 'AFNetworking'
 pod 'MWPhotoBrowser'
 pod 'SVPullToRefresh'
-pod 'pop'
 pod 'JDStatusBarNotification'
 pod 'UMengAnalytics'
 
