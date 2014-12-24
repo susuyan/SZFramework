@@ -90,14 +90,23 @@
 }
 
 - (void)onSegmentedButtonPressed:(UIButton *)button {
-    NSInteger buttonIndex = [self.buttonArray indexOfObject:button];
-    if (buttonIndex == self.selectedIndex) {
+    NSUInteger index = [self.buttonArray indexOfObject:button];
+    [self setSelectedIndex:index];
+    if ([self.segmentedControlDelegate respondsToSelector:@selector(onSelectedIndex:segmentedControl:)]) {
+        [self.segmentedControlDelegate onSelectedIndex:index segmentedControl:self];
+    }
+}
+
+- (void)setSelectedIndex:(NSInteger)index {
+    if (index == _selectedIndex) {
         return;
     }
     
+    UIButton *button = self.buttonArray[index];
     [[self.buttonArray objectAtIndex:self.selectedIndex] setSelected:NO];
-    _selectedIndex = buttonIndex;
     [button setSelected:YES];
+    
+    _selectedIndex = index;
     
     UIButton *needShowButton = button;
     if (button.x < (self.contentOffset.x+button.width)) {
@@ -109,23 +118,15 @@
     [self scrollRectToVisible:needShowButton.frame animated:YES];
     
     [UIView animateWithDuration:0.2 animations:^{
-        UIButton *button = [self.buttonArray objectAtIndex:buttonIndex];
-        UILabel *label = [[self.buttonArray objectAtIndex:buttonIndex] titleLabel];
+        UILabel *label = button.titleLabel;
         CGRect frame = CGRectMake(button.frame.origin.x + label.frame.origin.x,
                                   kSZSegmentedControlHeight - 4,
                                   label.frame.size.width + SZSegmentedControlSelectedIndecatorWidthAdjustment,
                                   3);
-        
         self.selectedIndicator.frame = frame;
     } completion:^(BOOL finished) {
-        if ([self.segmentedControlDelegate respondsToSelector:@selector(onSelectedIndex:segmentedControl:)]) {
-            [self.segmentedControlDelegate onSelectedIndex:buttonIndex segmentedControl:self];
-        }
-    }];
-}
 
-- (void)setSelectedIndex:(NSInteger)index {
-    [self onSegmentedButtonPressed:self.buttonArray[index]];
+    }];
 }
 
 @end
