@@ -1,1 +1,2 @@
-Common Tools
+一些类别扩展类。
+排出一个时间来，这些扩展整理到 HKit 的这个 repo 中。
